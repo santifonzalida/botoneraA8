@@ -8,6 +8,10 @@ export class HomeComponent implements OnInit {
 
   audio = new Audio();
   public filaAudio1: any[] = [];
+  private SOUNDS = {
+    'ronnie': 'RonnieColeman',
+    'tabamoTomando': 'tabamoTomando'
+  };
 
   constructor() {
 
@@ -16,9 +20,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() { }
 
 
-  public play(id: number) {
+  public play(sound) {
     console.log("yeah sound!");
-    this.audio.src = "../assets/audio/RonnieColeman.mp3";
+    this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
     this.audio.load();
     this.audio.play();
   }
