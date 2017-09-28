@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   public filaAudio1: any[] = [];
   private SOUNDS = {
     'ronnie': 'RonnieColeman',
-    'tabamoTomando': 'tabamoTomando',
+    'tabamoTomando': 'estabamoTomando',
     'carrera': 'CarreraAparentemente',
     'ua': 'uaaahah',
     'endu': 'enduEndu'
