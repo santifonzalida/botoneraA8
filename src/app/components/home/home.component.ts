@@ -8,25 +8,37 @@ export class HomeComponent implements OnInit {
 
   audio = new Audio();
   public filaAudio1: any[] = [];
+  private SOUNDS = {
+    'ronnie': 'RonnieColeman',
+    'tabamoTomando': 'tabamoTomando',
+    'carrera': 'CarreraAparentemente',
+    'ua': 'uaaahah',
+    'endu': 'enduEndu'
+  };
 
   constructor() {
-    filaAudio1 = [
+    /*filaAudio1 = [
       {id: 1, src= '../assets/audio/RonnieColeman.mp3'},
       {id: 2, src= '../assets/audio/enduEndu.mp3'},
       {id: 3, src= '../assets/audio/CarreraAparentemente.mp3'},
       {id: 4, src= '../assets/audio/uaaahah.mp3'}
-    ];
+    ];*/
   }
 
   ngOnInit() { }
-
-  public play(index: number) {
+  
+  public play(sound) {
+    console.log("yeah sound!");
+    this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
+    this.audio.load();
+    
+  /*public play(index: number) {
     for (let sonido of fileAudio1) {
       if(sonido.id == index){
         this.audio.src = sonido.src;
         this.audio.load();
       }
-    }
+    }*/
     this.audio.play();
   }
 
