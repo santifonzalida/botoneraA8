@@ -10,8 +10,8 @@
     <div class="row">
 
         <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option1" autocomplete="off"> yeah!
+          <label class="btn btn-secondary"(click)="play()">
+            <input type="radio" name="options" id="option1" autocomplete="off" > yeah!
           </label>
           <label class="btn btn-secondary">
             <input type="radio" name="options" id="option2" autocomplete="off"> lightweith
@@ -37,12 +37,7 @@
           <label class="btn btn-secondary">
             <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
           </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> sound 9
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> sound 10
-          </label>
+
         </div>
 
     </div>
@@ -75,12 +70,7 @@
         <label class="btn btn-secondary">
           <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 9
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 10
-        </label>
+
       </div>
     </div>
     <div class="row">
@@ -112,12 +102,7 @@
         <label class="btn btn-secondary">
           <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 9
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 10
-        </label>
+
       </div>
     </div>
     <div class="row">
@@ -149,15 +134,17 @@
         <label class="btn btn-secondary">
           <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 9
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 10
-        </label>
+
       </div>
     </div>
   </div>
 
+<div class="container-fluid">
+  <button type="button" class="btn btn-warning btn-lg btn-block" (click)="stop()">
+    <i class="material-icons">warning</i>
+    FRENAR
+    <i class="material-icons">warning</i>
+  </button>
+</div>
 
 </div>

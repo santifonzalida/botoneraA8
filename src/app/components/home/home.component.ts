@@ -5,7 +5,27 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'home.component.html',
 })
 export class HomeComponent implements OnInit {
-  constructor() { }
+
+  audio = new Audio();
+  public filaAudio1: any[] = [];
+
+  constructor() {
+
+  }
 
   ngOnInit() { }
+
+
+  public play(id: number) {
+    console.log("yeah sound!");
+    this.audio.src = "../assets/audio/RonnieColeman.mp3";
+    this.audio.load();
+    this.audio.play();
+  }
+
+
+  public stop() {
+    this.audio.pause();
+  }
+
 }
