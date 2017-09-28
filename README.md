@@ -1,3 +1,6 @@
+# Añadir sonidos
+Entrar en esta url: www.peggo.com y cargar un video de youtube para cortarlo y descargar el audio.
+
 # Botonera
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
