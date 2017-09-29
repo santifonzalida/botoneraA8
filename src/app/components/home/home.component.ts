@@ -13,7 +13,9 @@ export class HomeComponent implements OnInit {
     'tabamoTomando': 'estabamoTomando',
     'carrera': 'CarreraAparentemente',
     'ua': 'uaaahah',
-    'endu': 'enduEndu'
+    'endu': 'enduEndu',
+	'tramboliko': 'tramboliko',
+	'volo':'volo'
   };
 
   constructor() {
