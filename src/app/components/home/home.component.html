@@ -1,150 +1,58 @@
 <style>
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monoton|Press+Start+2P|Zilla+Slab+Highlight');
 </style>
 <div>
-  <h1 style="font-family: 'Zilla Slab Highlight', cursive;">BOTONERA MEDIA PLAYER v0.01</h1>
-  <h3 style="font-family: 'Zilla Slab Highlight', cursive;">Clone or download</h3>
-    <p> https://github.com/santifonzalida/botoneraA8.git </p>
-
-  <div class="container">
-    <div class="row">
-
-        <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-secondary"(click)="play('ronnie')">
-            <input type="radio" name="options" id="option1" autocomplete="off" > yeah!
-          </label>
-          <label class="btn btn-secondary" (click)="play('tabamoTomando')">
-            <input type="radio" name="options" id="option2" autocomplete="off"> tabamo tomando
-          </label>
-          <label class="btn btn-secondary" (click)="play('tramboliko')">
-            <input type="radio" name="options" id="option3" autocomplete="off" > tramboliko!
-          </label>
-          <label class="btn btn-secondary" (click)="play('volo')">
-            <input type="radio" name="options" id="option3" autocomplete="off" > y voló
-          </label>
-          <label class="btn btn-secondary" (click)="play('gg')">
-            <input type="radio" name="options" id="option3" autocomplete="off"> El mejor GG
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> sound 5
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> sound 6
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> sound 7
-          </label>
-          <label class="btn btn-secondary">
-            <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
-          </label>
-
-        </div>
-
-    </div>
-    <div class="row">
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-secondary" (click)="play('endu')">
-          <input type="radio" name="options" id="option1" autocomplete="off"> Enduu!
+  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive;">BOTONERA MEDIA PLAYER v0.17</h1>
+  <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive;">Clone or download</h3>
+  <p class="text-center"><strong>https://github.com/santifonzalida/botoneraA8.git</strong></p>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="btn-group">
+        <label class="text-center" (click)="play('ronnie')">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>Ronnie C!</strong></p>
         </label>
-        <label class="btn btn-secondary"(click)="play('carrera')">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Carrera aparentemente
+        <label class="text-center" (click)="play('tabamoTomando')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>tabamo tomando</strong></p>
         </label>
-        <label class="btn btn-secondary"(click)="play('ua')">
-          <input type="radio" name="options" id="option3" autocomplete="off"> uaaahaha!
+        <label class="text-center" (click)="play('tramboliko')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>tramboliko!</strong></p>
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound x
+        <label class="text-center" (click)="play('volo')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>y voló</strong></p>
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 4
+        <label class="text-center" (click)="play('gemido')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>Gemido</strong></p>
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 5
+        <label class="text-center" (click)="play('endu')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>Enduu!</strong></p>
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 6
+        <label class="text-center"(click)="play('carrera')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>Carrera aparentemente</strong></p>
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 7
+        <label class="text-center"(click)="play('ua')" style="margin-left:25px">
+          <img src="../assets/img/play-button.png" alt="boton">
+          <p class="text-center"><strong>uaaahaha!</strong></p>
         </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
-        </label>
-
       </div>
-    </div>
-    <div class="row">
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option1" autocomplete="off"> yeah!
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> lightweith
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> aaaa!
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> yeah badiii
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 4
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 5
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 6
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 7
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
-        </label>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option1" autocomplete="off"> yeah!
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> lightweith
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> aaaa!
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> yeah badiii
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 4
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 5
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 6
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 7
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> sound 8
-        </label>
-
-      </div>
-    </div>
   </div>
-
-<div class="container-fluid">
-  <button type="button" class="btn btn-warning btn-lg btn-block" (click)="stop()">
-    <i class="material-icons">warning</i>
-    FRENAR
-    <i class="material-icons">warning</i>
-  </button>
 </div>
 
-</div>
+ <div class="container">
+   <button type="button" class="btn btn-warning btn-lg btn-block" (click)="stop()">
+     <i class="material-icons">warning</i>
+     FRENAR
+     <i class="material-icons">warning</i>
+   </button>
+ </div>
+
+ <div class="container">
+   <h4 class="text-right" style="font-family: 'Libre Barcode 39 Text', cursive;">BOTONERAA8</h4>
+ </div>
