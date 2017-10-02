@@ -25,6 +25,7 @@ export class HomeComponent {
 	'ledijeNo':'ledijequeNo',
 	'mesobra':'mesobra',
 	'servicio':'servicio',
+	'activoPasivo':'activoPasivo'
   };
 
   public play(sound): void {
