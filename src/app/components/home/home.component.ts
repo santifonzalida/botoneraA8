@@ -4,10 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'btn-a8-home',
   templateUrl: 'home.component.html',
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   audio = new Audio();
-  public filaAudio1: any[] = [];
+
   private SOUNDS = {
     'ronnie': 'RonnieColeman',
     'tabamoTomando': 'estabamoTomando',
@@ -16,23 +16,22 @@ export class HomeComponent implements OnInit {
     'endu': 'enduEndu',
     'tramboliko': 'tramboliko',
     'volo': 'volo',
-    'gg': 'gg',
+    'gemido': 'gemido',
     'sonRibukOSonNaik': 'esaSonRibuOSonNai',
     'helloWeynes': 'helloWeynes',
     'seraEsta': 'seraEstaBrother',
     'taMuyPegaa': 'taMuiPegaaEsaCancion',
     'brea': 'yBuenoBrea'
   };
-  ngOnInit() { }
 
-  public play(sound) {
-    console.log("yeah sound!");
+  public play(sound): void {
+    console.log(sound);
     this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
     this.audio.load();
     this.audio.play();
   }
 
-  public stop() {
+  public stop(): void {
     this.audio.pause();
   }
 
