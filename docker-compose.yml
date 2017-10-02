@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  botonera:
+    container_name: botonera-a8
+    build: ./
+    image: a8/botonera
+    volumes:
+      - ./:/source
+    ports:
+      - 4200:4200
