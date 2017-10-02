@@ -21,7 +21,10 @@ export class HomeComponent {
     'helloWeynes': 'helloWeynes',
     'seraEsta': 'seraEstaBrother',
     'taMuyPegaa': 'taMuiPegaaEsaCancion',
-    'brea': 'yBuenoBrea'
+    'brea': 'yBuenoBrea',
+	'ledijeNo':'ledijequeNo',
+	'mesobra':'mesobra',
+	'servicio':'servicio',
   };
 
   public play(sound): void {
