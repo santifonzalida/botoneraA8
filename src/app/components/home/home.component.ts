@@ -16,7 +16,12 @@ export class HomeComponent {
     'endu': 'enduEndu',
     'tramboliko': 'tramboliko',
     'volo': 'volo',
-    'gemido': 'gemido'
+    'gemido': 'gemido',
+    'sonRibukOSonNaik': 'esaSonRibuOSonNai',
+    'helloWeynes': 'helloWeynes',
+    'seraEsta': 'seraEstaBrother',
+    'taMuyPegaa': 'taMuiPegaaEsaCancion',
+    'brea': 'yBuenoBrea'
   };
 
   public play(sound): void {

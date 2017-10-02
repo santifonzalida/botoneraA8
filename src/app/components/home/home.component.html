@@ -2,57 +2,96 @@
   @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monoton|Press+Start+2P|Zilla+Slab+Highlight');
 </style>
 <div>
-  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive;">BOTONERA MEDIA PLAYER v0.17</h1>
-  <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive;">Clone or download</h3>
+  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive; margin-top: 1em">BOTONERA MEDIA PLAYER v0.17</h1>
+  <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive; margin-top: 0.5em">Clone or download</h3>
   <p class="text-center"><strong>https://github.com/santifonzalida/botoneraA8.git</strong></p>
 </div>
 <div class="container">
+  <h2>Sound pack Carrera</h2>
   <div class="row">
-      <div class="btn-group">
-        <label class="text-center" (click)="play('ronnie')">
-          <img src="../assets/img/play-button.png" alt="boton">
-          <p class="text-center"><strong>Ronnie C!</strong></p>
-        </label>
-        <label class="text-center" (click)="play('tabamoTomando')" style="margin-left:25px">
+    <div class="btn-group">
+      <label class="text-center" (click)="play('endu')" style="margin-left:25px">
+                <img src="../assets/img/play-button.png" alt="boton">
+                <p class="text-center"><strong>Enduu!</strong></p>
+              </label>
+      <label class="text-center" (click)="play('carrera')" style="margin-left:25px">
+                <img src="../assets/img/play-button.png" alt="boton">
+                <p class="text-center"><strong>Carrera aparentemente</strong></p>
+              </label>
+      <label class="text-center" (click)="play('ua')" style="margin-left:25px">
+                <img src="../assets/img/play-button.png" alt="boton">
+                <p class="text-center"><strong>uaaahaha!</strong></p>
+              </label>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <h2>Sound pack La Arbolada</h2>
+  <div class="row">
+    <div class="btn-group">
+      <label class="text-center" (click)="play('tabamoTomando')" style="margin-left:25px">
           <img src="../assets/img/play-button.png" alt="boton">
           <p class="text-center"><strong>tabamo tomando</strong></p>
         </label>
-        <label class="text-center" (click)="play('tramboliko')" style="margin-left:25px">
+      <label class="text-center" (click)="play('tramboliko')" style="margin-left:25px">
           <img src="../assets/img/play-button.png" alt="boton">
           <p class="text-center"><strong>tramboliko!</strong></p>
         </label>
-        <label class="text-center" (click)="play('volo')" style="margin-left:25px">
+      <label class="text-center" (click)="play('volo')" style="margin-left:25px">
           <img src="../assets/img/play-button.png" alt="boton">
           <p class="text-center"><strong>y voló</strong></p>
         </label>
-        <label class="text-center" (click)="play('gemido')" style="margin-left:25px">
-          <img src="../assets/img/play-button.png" alt="boton">
-          <p class="text-center"><strong>Gemido</strong></p>
-        </label>
-        <label class="text-center" (click)="play('endu')" style="margin-left:25px">
-          <img src="../assets/img/play-button.png" alt="boton">
-          <p class="text-center"><strong>Enduu!</strong></p>
-        </label>
-        <label class="text-center"(click)="play('carrera')" style="margin-left:25px">
-          <img src="../assets/img/play-button.png" alt="boton">
-          <p class="text-center"><strong>Carrera aparentemente</strong></p>
-        </label>
-        <label class="text-center"(click)="play('ua')" style="margin-left:25px">
-          <img src="../assets/img/play-button.png" alt="boton">
-          <p class="text-center"><strong>uaaahaha!</strong></p>
-        </label>
-      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <h2>Sound pack Esas son ribuk o son naik</h2>
+  <div class="row">
+    <div class="btn-group">
+      <label class="text-center" (click)="play('sonRibukOSonNaik')" style="margin-left:25px">
+        <img src="../assets/img/play-button.png" alt="boton">
+        <p class="text-center"><strong>Esas so Ribuk o Son Naik!</strong></p>
+      </label>
+      <label class="text-center" (click)="play('helloWeynes')" style="margin-left:25px">
+        <img src="../assets/img/play-button.png" alt="boton">
+        <p class="text-center"><strong>Hello Wenyes</strong></p>
+      </label>
+      <label class="text-center" (click)="play('seraEsta')" style="margin-left:25px">
+        <img src="../assets/img/play-button.png" alt="boton">
+        <p class="text-center"><strong>Sera esta brother</strong></p>
+      </label>
+      <label class="text-center" (click)="play('taMuyPegaa')" style="margin-left:25px">
+        <img src="../assets/img/play-button.png" alt="boton">
+        <p class="text-center"><strong>Ta muy pegaa esa cancion</strong></p>
+      </label>
+      <label class="text-center" (click)="play('brea')" style="margin-left:25px">
+        <img src="../assets/img/play-button.png" alt="boton">
+        <p class="text-center"><strong>Y bueno brea</strong></p>
+      </label>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <h2>Sound pack Otros</h2>
+  <div class="row">
+    <div class="btn-group">
+      <label class="text-center" (click)="play('ronnie')">
+              <img src="../assets/img/play-button.png" alt="boton">
+              <p class="text-center"><strong>Ronnie C!</strong></p>
+            </label>
+      <label class="text-center" (click)="play('gemido')" style="margin-left:25px">
+                <img src="../assets/img/play-button.png" alt="boton">
+                <p class="text-center"><strong>Gemido</strong></p>
+              </label>
+    </div>
   </div>
 </div>
 
- <div class="container">
-   <button type="button" class="btn btn-warning btn-lg btn-block" (click)="stop()">
+<div class="container">
+  <button type="button" class="btn btn-warning btn-lg btn-block" (click)="stop()">
      <i class="material-icons">warning</i>
      FRENAR
      <i class="material-icons">warning</i>
    </button>
- </div>
+</div>
 
- <div class="container">
-   <h4 class="text-right" style="font-family: 'Libre Barcode 39 Text', cursive;">BOTONERAA8</h4>
- </div>
+<div class="container">
+  <h4 class="text-right" style="font-family: 'Libre Barcode 39 Text', cursive;">BOTONERAA8</h4>
+</div>
