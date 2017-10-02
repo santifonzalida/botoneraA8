@@ -16,7 +16,12 @@ export class HomeComponent implements OnInit {
     'endu': 'enduEndu',
     'tramboliko': 'tramboliko',
     'volo': 'volo',
-    'gg': 'gg'
+    'gg': 'gg',
+    'sonRibukOSonNaik': 'esaSonRibuOSonNai',
+    'helloWeynes': 'helloWeynes',
+    'seraEsta': 'seraEstaBrother',
+    'taMuyPegaa': 'taMuiPegaaEsaCancion',
+    'brea': 'yBuenoBrea'
   };
   ngOnInit() { }
 
