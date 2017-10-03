@@ -9,7 +9,6 @@ export class HomeComponent {
   audio = new Audio();
 
   private SOUNDS = {
-    'ronnie': 'RonnieColeman',
     'tabamoTomando': 'estabamoTomando',
     'carrera': 'CarreraAparentemente',
     'ua': 'uaaahah',
@@ -25,7 +24,9 @@ export class HomeComponent {
 	'ledijeNo':'ledijequeNo',
 	'mesobra':'mesobra',
 	'servicio':'servicio',
-	'activoPasivo':'activoPasivo'
+	'activoPasivo':'activoPasivo',
+'peamoa':'peamoa',
+'forinia':'forinia'
   };
 
   public play(sound): void {
