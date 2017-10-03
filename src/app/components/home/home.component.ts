@@ -26,7 +26,11 @@ export class HomeComponent {
 	'servicio':'servicio',
 	'activoPasivo':'activoPasivo',
 'peamoa':'peamoa',
-'forinia':'forinia'
+'forinia':'forinia',
+'desenchufalo':'desenchufalo',
+'todalaloz':'todalaloz',
+'electrificada':'electrificada',
+'sacalamano':'sacalamano'
   };
 
   public play(sound): void {
