@@ -11,30 +11,6 @@
   <div class="row">
     <div class="col-sm-2" style="cursor: pointer;">
       <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Endu</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('carrera')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Carrera aparentemente</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ua')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">uaaahaha!</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
         <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tabamoTomando')">play_circle_outline</i>
         <div class="card-body">
           <p class="card-text text-center">Tabamo tomando</p>
@@ -77,8 +53,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
     <div class="col-sm-2" style="cursor: pointer;">
       <div class="card">
         <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('seraEsta')">play_circle_outline</i>
@@ -95,6 +69,10 @@
         </div>
       </div>
     </div>
+  </div>
+
+
+  <div class="row">
     <div class="col-sm-2" style="cursor: pointer;">
       <div class="card">
         <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('brea')">play_circle_outline</i>
@@ -129,7 +107,75 @@
     </div>
   </div>
 
+	<div class="row">
+		<h3>Loco de carrera aparentemente</h3>
+		<label class="text-center" (click)="play('endu_elotroestabaasi')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>El otro estaba asi</strong></p>
+      		</label>
 
+		<label class="text-center" (click)="play('endu_paaa')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>PAAAAA</strong></p>
+      		</label>
+
+		<label class="text-center" (click)="play('endu_susurros')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>Susurros</strong></p>
+      		</label>
+
+		<label class="text-center" (click)="play('endu_endu')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>Enduenduenduen</strong></p>
+      		</label>
+
+		<label class="text-center" (click)="play('endu_aceleradaendu')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>Endu c/ acelerada</strong></p>
+      		</label>
+
+		<label class="text-center" (click)="play('endu_escuchabaelbam')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>Eschaba el baaam</strong></p>
+      		</label>
+
+		<label class="text-center" (click)="play('endu_carrera')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>Carrera</strong></p>
+      		</label>
+
+		<label class="text-center" (click)="play('endu_aparentemente')" style="margin-left:25px">
+        	<img src="../assets/img/play-button.png" alt="boton">
+        	<p class="text-center"><strong>Carrera aparentemente</strong></p>
+      		</label>
+	</div>
+	<div class="row">
+	<h3>Loco peamoa</h3>
+		<div class="col-sm-2" style="cursor: pointer;">
+      			<div class="card">
+        		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('peamoa')">play_circle_outline</i>
+        		<div class="card-body">
+        	  	<p class="card-text text-center">Peamoá</p>
+        		</div>
+      			</div>
+    		</div>
+		<div class="col-sm-2" style="cursor: pointer;">
+      			<div class="card">
+        		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('forinia')">play_circle_outline</i>
+        		<div class="card-body">
+        	  	<p class="card-text text-center">forinia</p>
+        		</div>
+      			</div>
+    		</div>
+		<div class="col-sm-2" style="cursor: pointer;">
+      			<div class="card">
+        		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sosunbandido')">play_circle_outline</i>
+        		<div class="card-body">
+        	  	<p class="card-text text-center">Sos un bandido</p>
+        		</div>
+      			</div>
+    		</div>
+	</div>
   <div class="row">
     <div class="btn-group">
       <label class="text-center" (click)="play('gemido')" style="margin-left:25px">
@@ -151,18 +197,6 @@
 		<label class="text-center" (click)="play('activoPasivo')">
               <img src="../assets/img/play-button.png" alt="boton">
               <p class="text-center"><strong>Activo pasivo</strong></p>
-            </label>
-		<label class="text-center" (click)="play('peamoa')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>Pea Moa</strong></p>
-            </label>
-		<label class="text-center" (click)="play('forinia')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>forinia</strong></p>
-            </label>
-		<label class="text-center" (click)="play('sosunbandido')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>Sos un bandido</strong></p>
             </label>
     </div>
   </div>
