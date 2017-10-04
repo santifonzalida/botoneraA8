@@ -33,6 +33,7 @@ export class HomeComponent {
     'endu_escuchabaelbam':'endu_escuchabaelbam',
     'endu_carrera':'endu_carrera',
     'endu_aparentemente':'endu_aparentemente'
+
   };
 
   public play(sound): void {
