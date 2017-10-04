@@ -21,13 +21,13 @@ export class HomeComponent {
     'seraEsta': 'seraEstaBrother',
     'taMuyPegaa': 'taMuiPegaaEsaCancion',
     'brea': 'yBuenoBrea',
-	'ledijeNo':'ledijequeNo',
-	'mesobra':'mesobra',
-	'servicio':'servicio',
-	'activoPasivo':'activoPasivo',
-'peamoa':'peamoa',
-'forinia':'forinia',
-'sosunbandido':'sosunbandido'
+    'ledijeNo':'ledijequeNo',
+    'mesobra':'mesobra',
+    'servicio':'servicio',
+    'activoPasivo':'activoPasivo',
+    'peamoa':'peamoa',
+    'forinia':'forinia',
+    'sosunbandido':'sosunbandido'
   };
 
   public play(sound): void {
