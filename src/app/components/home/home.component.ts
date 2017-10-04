@@ -10,9 +10,6 @@ export class HomeComponent {
 
   private SOUNDS = {
     'tabamoTomando': 'estabamoTomando',
-    'carrera': 'CarreraAparentemente',
-    'ua': 'uaaahah',
-    'endu': 'enduEndu',
     'tramboliko': 'tramboliko',
     'volo': 'volo',
     'gemido': 'gemido',
@@ -21,13 +18,21 @@ export class HomeComponent {
     'seraEsta': 'seraEstaBrother',
     'taMuyPegaa': 'taMuiPegaaEsaCancion',
     'brea': 'yBuenoBrea',
-	'ledijeNo':'ledijequeNo',
-	'mesobra':'mesobra',
-	'servicio':'servicio',
-	'activoPasivo':'activoPasivo',
-'peamoa':'peamoa',
-'forinia':'forinia',
-'sosunbandido':'sosunbandido'
+    'ledijeNo':'ledijequeNo',
+    'mesobra':'mesobra',
+    'servicio':'servicio',
+    'activoPasivo':'activoPasivo',
+    'peamoa':'peamoa',
+    'forinia':'forinia',
+    'sosunbandido':'sosunbandido',
+    'endu_elotroestabaasi':'endu_elotroestabaasi',
+    'endu_paaa':'endu_paaa',
+    'endu_susurros':'endu_susurros',
+    'endu_endu':'endu_endu',
+    'endu_aceleradaendu':'endu_aceleradaendu',
+    'endu_escuchabaelbam':'endu_escuchabaelbam',
+    'endu_carrera':'endu_carrera',
+    'endu_aparentemente':'endu_aparentemente'
   };
 
   public play(sound): void {
