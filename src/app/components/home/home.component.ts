@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'btn-a8-home',
+  host: {'(window:keydown)': 'hotkeys($event)'},
   templateUrl: 'home.component.html',
 })
+
 export class HomeComponent {
 
   audio = new Audio();
@@ -47,4 +49,11 @@ export class HomeComponent {
     this.audio.pause();
   }
 
+  hotkeys($event){
+      if ($event.keyCode == 32){
+         this.stop();
+      }
+   }
+ 
+   
 }
