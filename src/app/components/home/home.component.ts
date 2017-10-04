@@ -27,10 +27,7 @@ export class HomeComponent {
 	'activoPasivo':'activoPasivo',
 'peamoa':'peamoa',
 'forinia':'forinia',
-'desenchufalo':'desenchufalo',
-'todalaloz':'todalaloz',
-'electrificada':'electrificada',
-'sacalamano':'sacalamano'
+'sosunbandido':'sosunbandido'
   };
 
   public play(sound): void {
