@@ -107,8 +107,51 @@
     </div>
   </div>
 
+<div class="row">
+    <div class="col-sm-2" style="cursor: pointer;">
+      <div class="card">
+        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('gemido')">play_circle_outline</i>
+        <div class="card-body">
+          <p class="card-text text-center">Gemido</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2" style="cursor: pointer;">
+      <div class="card">
+        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ledijeNo')">play_circle_outline</i>
+        <div class="card-body">
+          <p class="card-text text-center">Le dije que no!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2" style="cursor: pointer;">
+      <div class="card">
+        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('mesobra')">play_circle_outline</i>
+        <div class="card-body">
+          <p class="card-text text-center">Me sobra</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2" style="cursor: pointer;">
+      <div class="card">
+        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('servicio')">play_circle_outline</i>
+        <div class="card-body">
+          <p class="card-text text-center">Servicio</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2" style="cursor: pointer;">
+      <div class="card">
+        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('activoPasivo')">play_circle_outline</i>
+        <div class="card-body">
+          <p class="card-text text-center">Activo y Pasivo</p>
+        </div>
+      </div>
+    </div>
+</div>
+
 	<div class="row">
-		<h3>Loco de carrera aparentemente</h3>
+		<div class="col-sm-12 col-md-12 col-lg-12"><h3>Loco de carrera aparentemente</h3></div>
 		<label class="text-center" (click)="play('endu_elotroestabaasi')" style="margin-left:25px">
         	<img src="../assets/img/play-button.png" alt="boton">
         	<p class="text-center"><strong>El otro estaba asi</strong></p>
@@ -150,7 +193,7 @@
       		</label>
 	</div>
 	<div class="row">
-	<h3>Loco peamoa</h3>
+	<div class="col-sm-12 col-md-12 col-lg-12"><h3>Loco peamoa</h3></div>
 		<div class="col-sm-2" style="cursor: pointer;">
       			<div class="card">
         		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('peamoa')">play_circle_outline</i>
@@ -176,30 +219,7 @@
       			</div>
     		</div>
 	</div>
-  <div class="row">
-    <div class="btn-group">
-      <label class="text-center" (click)="play('gemido')" style="margin-left:25px">
-                <img src="../assets/img/play-button.png" alt="boton">
-                <p class="text-center"><strong>Gemido</strong></p>
-              </label>	  
-	      <label class="text-center" (click)="play('ledijeNo')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>le dije que no!</strong></p>
-            </label>
-	       <label class="text-center" (click)="play('mesobra')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>Me sobra</strong></p>
-            </label>
-	       <label class="text-center" (click)="play('servicio')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>Servicio</strong></p>
-            </label>
-		<label class="text-center" (click)="play('activoPasivo')">
-              <img src="../assets/img/play-button.png" alt="boton">
-              <p class="text-center"><strong>Activo pasivo</strong></p>
-            </label>
-    </div>
-  </div>
+ 
 </div>
 
 <div class="container">
