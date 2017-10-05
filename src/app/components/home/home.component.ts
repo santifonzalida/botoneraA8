@@ -53,6 +53,39 @@ export class HomeComponent {
     if ($event.keyCode == 32) {
       this.stop();
     }
+    if ($event.keyCode == 81) {
+      this.play('gemido');
+    }
+    if ($event.keyCode == 87) {
+      this.play('ledijeNo');
+    }
+    if ($event.keyCode == 69) {
+      this.play('mesobra');
+    }
+    if ($event.keyCode == 82) {
+      this.play('servicio');
+    }
+    if ($event.keyCode == 65) {
+      this.play('endu_carrera');
+    }
+    if ($event.keyCode == 83) {
+      this.play('endu_aparentemente');
+    }
+    if ($event.keyCode == 68) {
+      this.play('endu_endu');
+    }
+    if ($event.keyCode == 70) {
+      this.play('endu_aceleradaendu');
+    }
+    if ($event.keyCode == 71) {
+      this.play('endu_elotroestabaasi');
+    }
+    if ($event.keyCode == 72) {
+      this.play('endu_susurros');
+    }
+    if ($event.keyCode == 74) {
+      this.play('endu_escuchabaelbam');
+    }
   }
 
 
