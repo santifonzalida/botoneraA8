@@ -35,7 +35,13 @@ export class HomeComponent {
     'endu_aceleradaendu': 'endu_aceleradaendu',
     'endu_escuchabaelbam': 'endu_escuchabaelbam',
     'endu_carrera': 'endu_carrera',
-    'endu_aparentemente': 'endu_aparentemente'
+    'endu_aparentemente': 'endu_aparentemente',
+    'diego_quienvaaser':'diego_quienvaaser',
+    'diego_canicani':'diego_canicani',
+    'diego_fenomenodrogadicto':'diego_fenomenodrogadicto',
+    'diego_eldiegoarmando':'diego_eldiegoarmando',
+    'diego_eldiegote':'diego_eldiegote',
+    'diego_eldiego':'diego_eldiego'
   };
 
   public play(sound): void {
@@ -83,9 +89,25 @@ export class HomeComponent {
     if ($event.keyCode == 72) {
       this.play('endu_susurros');
     }
-    if ($event.keyCode == 74) {
-      this.play('endu_escuchabaelbam');
+    if ($event.keyCode == 90) {
+      this.play('diego_eldiego');
     }
+    if ($event.keyCode == 88) {
+      this.play('diego_eldiegote');
+    }
+    if ($event.keyCode == 67) {
+      this.play('diego_eldiegoarmando');
+    }
+    if ($event.keyCode == 86) {
+      this.play('diego_fenomenodrogadicto');
+    }
+    if ($event.keyCode == 66) {
+      this.play('diego_canicani');
+    }
+    if ($event.keyCode == 78) {
+      this.play('diego_quienvaaser');
+    }
+
   }
 
 
