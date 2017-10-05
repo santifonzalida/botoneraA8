@@ -2,111 +2,141 @@
   @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monoton|Press+Start+2P|Zilla+Slab+Highlight');
 </style>
 <div>
-  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive; margin-top: 1em">BOTONERA MEDIA PLAYER v0.24</h1>
+  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive; margin-top: 1em">BOTONERA MEDIA PLAYER {{version}}</h1>
   <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive; margin-top: 0.5em">Clone or download</h3>
   <p class="text-center"><strong>https://github.com/santifonzalida/botoneraA8.git</strong></p>
 </div>
 <div class="container" (window:keydown)="hotkeys($event)">
 
-  <div class="row">
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tabamoTomando')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Tabamo tomando</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tramboliko')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Tramboliko</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('volo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Y voló</p>
-        </div>
+<div class="row">
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tabamoTomando')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Tabamo tomando</p>
       </div>
     </div>
   </div>
-
-
-  <div class="row">
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sonRibukOSonNaik')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Esas so Ribuk o Son Naik!</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('helloWeynes')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Hello Wenyes</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('seraEsta')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Será esta brother</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('taMuyPegaa')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Ta muy pegaa esa cancion</p>
-        </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('activoPasivo')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Activo y Pasivo</p>
       </div>
     </div>
   </div>
-
-
-  <div class="row">
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('brea')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Y bueno brea</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('gemido')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Gemido</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ledijeNo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">le dije que no!</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('mesobra')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Me sobra</p>
-        </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+			<div class="card">
+  		    <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('forinia')">play_circle_outline</i>
+      		<div class="card-body">
+      	  	<p class="card-text text-center">forinia</p>
+      		</div>
+			</div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tramboliko')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Tramboliko</p>
       </div>
     </div>
   </div>
-
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('volo')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Y voló</p>
+      </div>
+    </div>
+  </div>
+  <!--fin row-->
+</div>
+<div class="row">
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sonRibukOSonNaik')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Esas so Ribuk o Son Naik!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+			<div class="card">
+    		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('peamoa')">play_circle_outline</i>
+    		<div class="card-body">
+    	  	<p class="card-text text-center">Peamoá</p>
+    		</div>
+			</div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('helloWeynes')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Hello Wenyes</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('seraEsta')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Será esta brother</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('taMuyPegaa')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Ta muy pegaa esa cancion</p>
+      </div>
+    </div>
+  </div>
+  <!--fin row-->
+</div>
+<div class="row">
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('brea')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Y bueno brea</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('gemido')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Gemido</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ledijeNo')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">le dije que no!</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('mesobra')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Me sobra</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_paaa')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">PAAAAA</p>
+      </div>
+    </div>
+  </div>
+  <!--fin row-->
+</div>
 <div class="row">
     <div class="col-sm-2" style="cursor: pointer;">
       <div class="card">
@@ -142,84 +172,75 @@
     </div>
     <div class="col-sm-2" style="cursor: pointer;">
       <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('activoPasivo')">play_circle_outline</i>
+        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_elotroestabaasi')">play_circle_outline</i>
         <div class="card-body">
-          <p class="card-text text-center">Activo y Pasivo</p>
+          <p class="card-text text-center">El otro estaba así</p>
         </div>
       </div>
     </div>
+<!--fin row-->
 </div>
-
-	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12"><h3>Loco de carrera aparentemente</h3></div>
-		<label class="text-center" (click)="play('endu_elotroestabaasi')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>El otro estaba asi</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_paaa')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>PAAAAA</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_susurros')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>Susurros</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_endu')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>Enduenduenduen</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_aceleradaendu')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>Endu c/ acelerada</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_escuchabaelbam')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>Eschaba el baaam</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_carrera')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>Carrera</strong></p>
-      		</label>
-
-		<label class="text-center" (click)="play('endu_aparentemente')" style="margin-left:25px">
-        	<img src="../assets/img/play-button.png" alt="boton">
-        	<p class="text-center"><strong>Carrera aparentemente</strong></p>
-      		</label>
-	</div>
-	<div class="row">
-	<div class="col-sm-12 col-md-12 col-lg-12"><h3>Loco peamoa</h3></div>
-		<div class="col-sm-2" style="cursor: pointer;">
-      			<div class="card">
-        		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('peamoa')">play_circle_outline</i>
-        		<div class="card-body">
-        	  	<p class="card-text text-center">Peamoá</p>
-        		</div>
-      			</div>
+<div class="row">
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_susurros')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Susurros</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_endu')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Enduenduenduen</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_aceleradaendu')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Endu c/ acelerada</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_escuchabaelbam')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Eschaba el baaam</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_carrera')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Carrera</p>
+      </div>
+    </div>
+  </div>
+  <!--fin row-->
+</div>
+<div class="row">
+  <div class="col-sm-2" style="cursor: pointer;">
+    <div class="card">
+      <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_aparentemente')">play_circle_outline</i>
+      <div class="card-body">
+        <p class="card-text text-center">Carrera aparentemente</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2" style="cursor: pointer;">
+			<div class="card">
+    		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sosunbandido')">play_circle_outline</i>
+    		<div class="card-body">
+    	  	<p class="card-text text-center">Sos un bandido</p>
     		</div>
-		<div class="col-sm-2" style="cursor: pointer;">
-      			<div class="card">
-        		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('forinia')">play_circle_outline</i>
-        		<div class="card-body">
-        	  	<p class="card-text text-center">forinia</p>
-        		</div>
-      			</div>
-    		</div>
-		<div class="col-sm-2" style="cursor: pointer;">
-      			<div class="card">
-        		<i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sosunbandido')">play_circle_outline</i>
-        		<div class="card-body">
-        	  	<p class="card-text text-center">Sos un bandido</p>
-        		</div>
-      			</div>
-    		</div>
-	</div>
- 
+			</div>
+  </div>
+  <!--fin row-->
 </div>
 
 <div class="container">
