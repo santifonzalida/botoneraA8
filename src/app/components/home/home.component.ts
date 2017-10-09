@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent {
 
-  version: string = 'v0.051';
+  version: string = 'v0.054';
   audio = new Audio();
 
   private SOUNDS = {
@@ -36,12 +36,10 @@ export class HomeComponent {
     'endu_escuchabaelbam': 'endu_escuchabaelbam',
     'endu_carrera': 'endu_carrera',
     'endu_aparentemente': 'endu_aparentemente',
-    'diego_quienvaaser':'diego_quienvaaser',
-    'diego_canicani':'diego_canicani',
-    'diego_fenomenodrogadicto':'diego_fenomenodrogadicto',
-    'diego_eldiegoarmando':'diego_eldiegoarmando',
-    'diego_eldiegote':'diego_eldiegote',
-    'diego_eldiego':'diego_eldiego'
+    'diego_canicani': 'diego_canicani',
+    'diego_eldiegoarmando': 'diego_eldiegoarmando',
+    'diego_eldiegote': 'diego_eldiegote',
+    'diego_eldiego': 'diego_eldiego'
   };
 
   public play(sound): void {
