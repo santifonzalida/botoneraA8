@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-echo "Iniciando docker"
+echo "Haciendo build"
+ng build
+echo "Iniciando docker, disfrute su botonera ingresar a http://localhost"
 docker-compose up -d botonera
-echo "Mostrando logs, Disfrute su aplicacion :)"
-docker-compose logs -f botonera
