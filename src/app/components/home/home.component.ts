@@ -39,7 +39,25 @@ export class HomeComponent {
     'diego_canicani': 'diego_canicani',
     'diego_eldiegoarmando': 'diego_eldiegoarmando',
     'diego_eldiegote': 'diego_eldiegote',
-    'diego_eldiego': 'diego_eldiego'
+    'diego_eldiego': 'diego_eldiego',
+    'tano-camiseta-boca': 'tano-pasman/camiseta-boca',
+    'tano-dala-boludo': 'tano-pasman/dala-boludo',
+    'tano-dale-boludo': 'tano-pasman/dale-boludo',
+    'tano-en-la-b': 'tano-pasman/en-la-b',
+    'tano-isabel': 'tano-pasman/isabel',
+    'tano-jj': 'tano-pasman/jj-lopex',
+    'tano-pelota-pendejo': 'tano-pasman/la-pelota-pendejo',
+    'tano-publicidad-pelotudo': 'tano-pasman/publicidad-pelotudo',
+    'tano-lpqmp': 'tano-pasman/lpqmp',
+    'tano-lpqmp-ndm': 'tano-pasman/lpqmp-ndm',
+    'tano-negro-de-mierda': 'tano-pasman/negro-de-mierda',
+    'tano-nooo': 'tano-pasman/noooo',
+    'tano-paraguayo': 'tano-pasman/praguayo',
+    'tano-penal-pelotudo': 'tano-pasman/penal-pelotudo',
+    'tano-huevo': 'tano-pasman/pongan-huevo',
+    'tano-public': 'tano-pasman/publicidad-lpqtp',
+    'tano-mierda': 'tano-pasman/que-mierda-es-esto',
+    'tano-boca': 'tano-pasman/te-fuiste-a-boca',
   };
 
   public play(sound): void {
