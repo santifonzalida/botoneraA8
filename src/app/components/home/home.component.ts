@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent {
 
-  version: string = 'v0.054';
+  version: string = 'v1.0';
   audio = new Audio();
 
   private SOUNDS = {
@@ -47,12 +47,12 @@ export class HomeComponent {
     'tano-isabel': 'tano-pasman/isabel',
     'tano-jj': 'tano-pasman/jj-lopex',
     'tano-pelota-pendejo': 'tano-pasman/la-pelota-pendejo',
-    'tano-publicidad-pelotudo': 'tano-pasman/publicidad-pelotudo',
+    'tano-publicidad-pelotudo': 'tano-pasman/la-publicidad-pelotudo',
     'tano-lpqmp': 'tano-pasman/lpqmp',
     'tano-lpqmp-ndm': 'tano-pasman/lpqmp-ndm',
     'tano-negro-de-mierda': 'tano-pasman/negro-de-mierda',
     'tano-nooo': 'tano-pasman/noooo',
-    'tano-paraguayo': 'tano-pasman/praguayo',
+    'tano-paraguayo': 'tano-pasman/paraguayo',
     'tano-penal-pelotudo': 'tano-pasman/penal-pelotudo',
     'tano-huevo': 'tano-pasman/pongan-huevo',
     'tano-public': 'tano-pasman/publicidad-lpqtp',
