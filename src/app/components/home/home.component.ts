@@ -58,6 +58,17 @@ export class HomeComponent {
     'tano-public': 'tano-pasman/publicidad-lpqtp',
     'tano-mierda': 'tano-pasman/que-mierda-es-esto',
     'tano-boca': 'tano-pasman/te-fuiste-a-boca',
+    'ronnie_yeabuddy':'ronnie_yeabuddy',
+    'ronnie_yeabuddy1':'ronnie_yeabuddy1',
+    'ronnie_yea':'ronnie_yea',
+    'ronnie_wow1':'ronnie_wow1',
+    'ronnie_wow2':'ronnie_wow2',
+    'ronnie_wow3':'ronnie_wow3',
+    'ronnie_wooo1':'ronnie_wooo1',
+    'ronnie_wooo2':'ronnie_wooo2',
+    'ronnie_lightweight':'ronnie_lightweight',
+    'ronnie_gobaby':'ronnie_gobaby',
+    'ronnie_alright':'ronnie_alright',
   };
 
   public play(sound): void {
