@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent {
 
-  version: string = 'v1.0';
+  version: string = 'v1.078';
   audio = new Audio();
 
   private SOUNDS = {
