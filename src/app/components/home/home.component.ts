@@ -69,6 +69,9 @@ export class HomeComponent {
     'ronnie_lightweight':'ronnie_lightweight',
     'ronnie_gobaby':'ronnie_gobaby',
     'ronnie_alright':'ronnie_alright',
+    'duroduro':'duroduro',
+    'cocosily':'cocosily',
+    'oldenait':'oldenait'
   };
 
   public play(sound): void {
