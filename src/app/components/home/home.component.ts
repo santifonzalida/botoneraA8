@@ -160,13 +160,13 @@ export class HomeComponent {
     if ($event.keyCode == 104) {
       this.play('ronnie_yea');
     }
-    if ($event.keyCode == 105) {
+    if ($event.keyCode == 96) {
       this.play('ronnie_lightweight');
     }
-    if ($event.keyCode == 106) {
+    if ($event.keyCode == 105) {
       this.play('ronnie_gobaby');
     }
-    if ($event.keyCode == 107) {
+    if ($event.keyCode == 106) {
       this.play('ronnie_alright');
     }
     if ($event.keyCode == 90) {
