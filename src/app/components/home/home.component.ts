@@ -94,14 +94,23 @@ export class HomeComponent {
     if ($event.keyCode == 81) {
       this.play('gemido');
     }
-    if ($event.keyCode == 87) {
+    if ($event.keyCode == 89) {
       this.play('ledijeNo');
     }
-    if ($event.keyCode == 69) {
+    if ($event.keyCode == 87) {
       this.play('mesobra');
     }
+    if ($event.keyCode == 69) {
+      this.play('trabas_mecontaron');
+    }
     if ($event.keyCode == 82) {
-      this.play('servicio');
+      this.play('trabas_activopasivo');
+    }
+    if ($event.keyCode == 84) {
+      this.play('trabas_servicio');
+    }
+    if ($event.keyCode == 85) {
+      this.play('trabas_asadito');
     }
     if ($event.keyCode == 65) {
       this.play('endu_carrera');
@@ -120,6 +129,45 @@ export class HomeComponent {
     }
     if ($event.keyCode == 72) {
       this.play('endu_susurros');
+    }
+    if ($event.keyCode == 74) {
+      this.play('endu_escuchabaelbam');
+    }
+    if ($event.keyCode == 75) {
+      this.play('endu_paaa');
+    }
+    if ($event.keyCode == 97) {
+      this.play('ronnie_wow1');
+    }
+    if ($event.keyCode == 98) {
+      this.play('ronnie_wow2');
+    }
+    if ($event.keyCode == 99) {
+      this.play('ronnie_wow3');
+    }
+    if ($event.keyCode == 100) {
+      this.play('ronnie_wooo1');
+    }
+    if ($event.keyCode == 101) {
+      this.play('ronnie_wooo2');
+    }
+    if ($event.keyCode == 102) {
+      this.play('ronnie_yeabuddy');
+    }
+    if ($event.keyCode == 103) {
+      this.play('ronnie_yeabuddy1');
+    }
+    if ($event.keyCode == 104) {
+      this.play('ronnie_yea');
+    }
+    if ($event.keyCode == 105) {
+      this.play('ronnie_lightweight');
+    }
+    if ($event.keyCode == 106) {
+      this.play('ronnie_gobaby');
+    }
+    if ($event.keyCode == 107) {
+      this.play('ronnie_alright');
     }
     if ($event.keyCode == 90) {
       this.play('diego_eldiego');
