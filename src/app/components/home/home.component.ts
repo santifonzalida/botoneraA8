@@ -23,6 +23,7 @@ export class HomeComponent {
     'brea': 'yBuenoBrea',
     'ledijeNo': 'ledijequeNo',
     'mesobra': 'mesobra',
+    'trabas_servicioBug':'trabas_servicioBug',
     'trabas_servicio': 'trabas_servicio',
     'trabas_activopasivo': 'trabas_activopasivo',
     'trabas_mecontaron':'trabas_mecontaron',
@@ -73,7 +74,8 @@ export class HomeComponent {
     'ronnie_alright':'ronnie_alright',
     'duroduro':'duroduro',
     'cocosily':'cocosily',
-    'oldenait':'oldenait'
+    'oldenait':'oldenait',
+    'peamoa_sutrasero':'peamoa_sutrasero'
   };
 
   public play(sound): void {
@@ -88,7 +90,7 @@ export class HomeComponent {
   }
 
   hotkeys($event) {
-    if ($event.keyCode == 32) {
+    if ($event.keyCode == 16) {
       this.stop();
     }
     if ($event.keyCode == 81) {
@@ -135,6 +137,9 @@ export class HomeComponent {
     }
     if ($event.keyCode == 75) {
       this.play('endu_paaa');
+    }
+    if ($event.keyCode == 76) {
+      this.play('peamoa_sutrasero');
     }
     if ($event.keyCode == 97) {
       this.play('ronnie_wow1');
@@ -186,6 +191,15 @@ export class HomeComponent {
     }
     if ($event.keyCode == 78) {
       this.play('diego_quienvaaser');
+    }
+    if ($event.keyCode == 191) {
+      this.play('trabas_servicioBug');
+    }
+    if ($event.keyCode == 78) {
+      this.play('tano-nooo');
+    }
+    if ($event.keyCode == 73) {
+      this.play('cocosily');
     }
 
   }
