@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'btn-a8-home',
   host: { '(window:keydown)': 'hotkeys($event)' },
   templateUrl: 'home.component.html',
+  styleUrls: ['./home.component.scss']
 })
 
 export class HomeComponent {
