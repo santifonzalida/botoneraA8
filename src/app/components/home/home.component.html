@@ -1,498 +1,608 @@
 ﻿<style>
-  @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monoton|Press+Start+2P|Zilla+Slab+Highlight');
+    @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monoton|Press+Start+2P|Zilla+Slab+Highlight');
 </style>
 <div>
-  <h1 class="text-center" style="font-family: 'Press Start 2P', cursive; margin-top: 1em">BOTONERA MEDIA PLAYER {{version}}</h1>
-  <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive; margin-top: 0.5em">Clone or download</h3>
-  <p class="text-center">
-    <strong>https://github.com/santifonzalida/botoneraA8.git</strong>
-  </p>
-</div>
+    <h1 class="text-center" style="font-family: 'Press Start 2P', cursive; margin-top: 1em">BOTONERA MEDIA PLAYER {{version}}</h1>
+    <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive; margin-top: 0.5em">Clone or download</h3>
+    <p class="text-center">
+        <strong>https://github.com/santifonzalida/botoneraA8.git</strong>
+    </p>
+  </div>
 <div class="container" (window:keydown)="hotkeys($event)">
 
-  <div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h3>Loco Endú</h3> <small>Fila letra "A"</small>
-</div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_carrera')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Carrera</p>
+    <div class="row section-container">
+        <div class="col-12">
+            <h3>Loco Endú</h3> <small>Fila letra "A"</small>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_aparentemente')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Carrera aparentemente</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_carrera')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Carrera</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-<div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_endu')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Enduenduenduen</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_aparentemente')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Carrera aparentemente</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_aceleradaendu')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Endu c/ acelerada</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_endu')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Enduenduenduen</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_elotroestabaasi')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">El otro estaba así</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_aceleradaendu')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Endu c/ acelerada</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_susurros')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Susurros</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_elotroestabaasi')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">El otro estaba así</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_escuchabaelbam')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Escuchaba el baaam</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_susurros')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Susurros</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('endu_paaa')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">PAAAAA</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_escuchabaelbam')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Escuchaba el baaam</p>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('endu_paaa')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">PAAAAA</p>
+                </div>
+            </div>
+        </div>
+      <!--fin row-->
     </div>
+
+    <div class="row section-container">
+        <div class="col-12">
+            <h3>Trabas</h3><small>Fila letra "W"</small>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('mesobra')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Me sobra</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('trabas_mecontaron')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Me contaron</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('trabas_activopasivo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Activo y pasivo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('trabas_servicio')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Servicio</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ledijeNo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Le dije que no!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('trabas_asadito')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Asadito</p>
+                </div>
+            </div>
+        </div>
+        <!--fin row-->
+    </div>
+
+
+    <div class="row section-container">
+        <div class="col-12">
+            <h3>Ronnie Coleman</h3><small>Teclado Numérico</small>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_wow1')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_wow1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_wow2')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_wow2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_wow3')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_wow3</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_wooo1')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_wooo1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_wooo2')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_wooo2</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_yeabuddy')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_yeabuddy</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_yeabuddy1')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_yeabuddy1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_yea')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_yea</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_lightweight')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_lightweight</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_gobaby')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_gobaby</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('ronnie_alright')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">ronnie_alright</p>
+                </div>
+            </div>
+        </div>
     <!--fin row-->
-  </div>
+    </div>
 
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h3>Trabas</h3><small>Fila letra "W"</small>
-</div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('mesobra')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Me sobra</p>
+
+    <div class="row section-container">
+        <div class="col-12">
+            <h3>Clasicos</h3>
         </div>
-      </div>
-    </div>
-       <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('trabas_mecontaron')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Me contaron</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('gemido')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Gemido (Q)</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('trabas_activopasivo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Activo y Pasivo</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('peamoa')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Peamoá</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('trabas_servicio')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Servicio</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('forinia')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">forinia</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-       <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ledijeNo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Le dije que no!</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tabamoTomando')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Tabamo tomando</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-       <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('trabas_asadito')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Asadito</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tramboliko')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Tramboliko</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('brea')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Y bueno brea</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('sonRibukOSonNaik')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Esas so Ribuk o Son Naik!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('helloWeynes')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Hello Wenyes</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('seraEsta')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Será esta brother</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('taMuyPegaa')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Ta muy pegaa esa cancion</p>
+                </div>
+            </div>
+        </div>
     <!--fin row-->
-  </div>
+    </div>
 
-  <div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h3>Ronnie Coleman</h3><small>Teclado Numérico y +-/*</small>
-</div>
-<div class="row">
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_wow1')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_wow1</p>
+    <div class="row section-container">
+        <div class="col-12">
+            <h3>Varios</h3>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_wow2')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_wow2</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('oldenait')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Oldenait</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_wow3')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_wow3</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('duroduro')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Duro Duro</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_wooo1')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_wooo1</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('cocosily')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">IIIHHH</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_wooo2')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_wooo2</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('volo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Y voló</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_yeabuddy')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_yeabuddy</p>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('sosunbandido')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Sos un bandido</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-<div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_yeabuddy1')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_yeabuddy1</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_yea')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_yea</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_lightweight')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_lightweight</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_gobaby')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_gobaby</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('ronnie_alright')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">ronnie_alright</p>
-        </div>
-      </div>
-    </div>
-    <!--fin row-->
-  </div>
-
-
-  <div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h3>Clasicos</h3>
-</div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('gemido')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Gemido (Q)</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('peamoa')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Peamoá</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('forinia')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">forinia</p>
-        </div>
-      </div>
-    </div>
-<div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tabamoTomando')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Tabamo tomando</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tramboliko')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Tramboliko</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('brea')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Y bueno brea</p>
-        </div>
-      </div>
-    </div>
-<div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sonRibukOSonNaik')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Esas so Ribuk o Son Naik!</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('helloWeynes')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Hello Wenyes</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('seraEsta')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Será esta brother</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('taMuyPegaa')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Ta muy pegaa esa cancion</p>
-        </div>
-      </div>
-    </div>
-    <!--fin row-->
-  </div>
-
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h3>Varios</h3>
-</div>
-     <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('oldenait')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Oldenait</p>
-        </div>
-      </div>
-    </div>
-      <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('duroduro')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Duro Duro</p>
-        </div>
-      </div>
-    </div>
-       <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('cocosily')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">IIIHHH</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('volo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Y voló</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('sosunbandido')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Sos un bandido</p>
-        </div>
-      </div>
-    </div>
- </div>
 
 
   
-  <div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<h3>Fútbol</h3>
-</div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('diego_eldiego')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">El diego</p>
+    <div class="row section-container">
+        <div class="col-12">
+            <h3>Fútbol</h3>
         </div>
-      </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('diego_eldiego')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">El Diego</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('diego_eldiegote')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">El Diegote</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('diego_canicani')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Cani Cani!!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-dala-boludo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Dale boludo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-dale-boludo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Dale boludo1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-en-la-b')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Estamos en la B</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-isabel1')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Isabel</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-negro-de-mierda')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Negro de mierda</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-nooo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Noooooo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-paraguayo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Paraguayo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-boca')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Te fuiste a boca</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-publicidad-pelotudo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Que pone la publicidad</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-huevo')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Pongan huevo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-jj')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">JJ Lopez</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" style="cursor: pointer;">
+            <div class="card-holder">
+                <div class="icon-holder d-flex align-items-center justify-content-center">
+                    <i class="material-icons card-img-top text-center" (click)="play('tano-mierda')">play_circle_outline</i>
+                </div>
+                <div class="text-holder d-flex align-items-center justify-content-center">
+                    <p class="text-center">Que mierda es esto</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('diego_eldiegote')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">El diegote</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('diego_canicani')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Cani Cani!!</p>
-        </div>
-      </div>
-    </div>
-<div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-dala-boludo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Dale boludo</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-dale-boludo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Dale boludo1</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-en-la-b')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Estamos en la B</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-isabel')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Isabel</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-negro-de-mierda')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Negro de mierda</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-nooo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Noooooo</p>
-        </div>
-      </div>
-    </div>
-<div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-paraguayo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Paraguayo</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-boca')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Te fuiste a boca</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-publicidad-pelotudo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Que pone la publicidad</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-huevo')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Pongan huevo</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-jj')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">JJ Lopez</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2" style="cursor: pointer;">
-      <div class="card">
-        <i class="material-icons card-img-top text-center" style="font-size: 80px;" (click)="play('tano-mierda')">play_circle_outline</i>
-        <div class="card-body">
-          <p class="card-text text-center">Que mierda es esto</p>
-        </div>
-     </div>
-     </div>
-  </div>
 
 
     <div class="container">
