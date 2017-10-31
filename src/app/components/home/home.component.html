@@ -4,10 +4,26 @@
 <div>
     <h1 class="text-center" style="font-family: 'Press Start 2P', cursive; margin-top: 1em">BOTONERA MEDIA PLAYER {{version}}</h1>
     <h3 class="text-center" style="font-family: 'Zilla Slab Highlight', cursive; margin-top: 0.5em">Clone or download</h3>
-    <p class="text-center">
+    <p class="text-center repo-url">
         <strong>https://github.com/santifonzalida/botoneraA8.git</strong>
     </p>
-  </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-9">
+            <div class="warning-alert d-flex align-items-center mx-auto" (click)="stop()">
+                <span>i</span>
+                <p>Atajo! Presionar tecla SHIFT para frenar audio</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="stop-button d-flex justify-content-center" (click)="stop()">
+    STOP
+</button>
+
 <div class="container" (window:keydown)="hotkeys($event)">
 
     <div class="row section-container">
@@ -604,19 +620,8 @@
         </div>
     </div>
 
-
-    <div class="container">
-      <button type="button" class="btn btn-warning btn-lg btn-block" (click)="stop()">
-        <i class="material-icons">warning</i>
-        FRENAR
-        <small>Atajo: Tecla 'SHIFT'</small>
-        <i class="material-icons">warning</i>
-      </button>
+    <div class="row justify-content-end">
+        <h4 style="font-family: 'Libre Barcode 39 Text', cursive;">BOTONERAA8</h4>
     </div>
-
-    <div class="container">
-      <h4 class="text-right" style="font-family: 'Libre Barcode 39 Text', cursive;">BOTONERAA8</h4>
-    </div>
-		
-		
-  </div>
+	
+</div>
