@@ -94,6 +94,9 @@ export class HomeComponent {
     if ($event.keyCode == 16) {
       this.stop();
     }
+    if ($event.keyCode == 80) {
+      this.play('peamoa');
+    }
     if ($event.keyCode == 81) {
       this.play('gemido');
     }
