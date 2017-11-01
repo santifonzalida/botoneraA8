@@ -4,7 +4,7 @@
 
 .warning-alert{
     font-family: 'Press Start 2P', cursive;
-    max-width: 730px;
+    max-width: 745px;
     min-height: 80px;
     padding: 20px;
     margin-bottom: 20px;
@@ -16,10 +16,11 @@
     &:hover,
     &:focus {
         background: #00b8e6;
-        box-shadow: inset -6px -6px 0px 0px #007a99;
+        box-shadow: inset 3px 3px 0px 0px #007a99;
+        outline: none;
     }
     &:active {
-        box-shadow: inset 4px 4px 0px 0px #007a99;
+        box-shadow: inset 3px 3px 0px 0px #007a99;
     }
     &:before,
     &:after{
@@ -80,10 +81,11 @@
     &:hover,
     &:focus {
         background: #CE372B;
-        box-shadow: inset -6px -6px 0px 0px #8C2022;
+        box-shadow: inset 3px 3px 0px 0px #8C2022;
+        outline: none;
     }
     &:active {
-        box-shadow: inset 4px 4px 0px 0px #8C2022;
+        box-shadow: inset 3px 3px 0px 0px #8C2022;
     }
     &:before,
     &:after{
