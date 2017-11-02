@@ -22,6 +22,7 @@ export class HomeComponent {
     'seraEsta': 'seraEstaBrother',
     'taMuyPegaa': 'taMuiPegaaEsaCancion',
     'brea': 'yBuenoBrea',
+    'delfin_nopuedeser': 'delfin_nopuedeser',
     'ledijeNo': 'ledijequeNo',
     'mesobra': 'mesobra',
     'trabas_servicioBug': 'trabas_servicioBug',
