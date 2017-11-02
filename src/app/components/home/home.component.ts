@@ -24,11 +24,11 @@ export class HomeComponent {
     'brea': 'yBuenoBrea',
     'ledijeNo': 'ledijequeNo',
     'mesobra': 'mesobra',
-    'trabas_servicioBug':'trabas_servicioBug',
+    'trabas_servicioBug': 'trabas_servicioBug',
     'trabas_servicio': 'trabas_servicio',
     'trabas_activopasivo': 'trabas_activopasivo',
-    'trabas_mecontaron':'trabas_mecontaron',
-    'trabas_asadito':'trabas_asadito',
+    'trabas_mecontaron': 'trabas_mecontaron',
+    'trabas_asadito': 'trabas_asadito',
     'peamoa': 'peamoa',
     'forinia': 'forinia',
     'sosunbandido': 'sosunbandido',
@@ -62,21 +62,21 @@ export class HomeComponent {
     'tano-public': 'tano-pasman/publicidad-lpqtp',
     'tano-mierda': 'tano-pasman/que-mierda-es-esto',
     'tano-boca': 'tano-pasman/te-fuiste-a-boca',
-    'ronnie_yeabuddy':'ronnie_yeabuddy',
-    'ronnie_yeabuddy1':'ronnie_yeabuddy1',
-    'ronnie_yea':'ronnie_yea',
-    'ronnie_wow1':'ronnie_wow1',
-    'ronnie_wow2':'ronnie_wow2',
-    'ronnie_wow3':'ronnie_wow3',
-    'ronnie_wooo1':'ronnie_wooo1',
-    'ronnie_wooo2':'ronnie_wooo2',
-    'ronnie_lightweight':'ronnie_lightweight',
-    'ronnie_gobaby':'ronnie_gobaby',
-    'ronnie_alright':'ronnie_alright',
-    'duroduro':'duroduro',
-    'cocosily':'cocosily',
-    'oldenait':'oldenait',
-    'peamoa_sutrasero':'peamoa_sutrasero'
+    'ronnie_yeabuddy': 'ronnie_yeabuddy',
+    'ronnie_yeabuddy1': 'ronnie_yeabuddy1',
+    'ronnie_yea': 'ronnie_yea',
+    'ronnie_wow1': 'ronnie_wow1',
+    'ronnie_wow2': 'ronnie_wow2',
+    'ronnie_wow3': 'ronnie_wow3',
+    'ronnie_wooo1': 'ronnie_wooo1',
+    'ronnie_wooo2': 'ronnie_wooo2',
+    'ronnie_lightweight': 'ronnie_lightweight',
+    'ronnie_gobaby': 'ronnie_gobaby',
+    'ronnie_alright': 'ronnie_alright',
+    'duroduro': 'duroduro',
+    'cocosily': 'cocosily',
+    'oldenait': 'oldenait',
+    'peamoa_sutrasero': 'peamoa_sutrasero'
   };
 
   public play(sound): void {
@@ -207,6 +207,6 @@ export class HomeComponent {
     }
 
   }
-  
+
 
 }
