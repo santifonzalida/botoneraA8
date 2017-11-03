@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireObject, AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'btn-a8-home',
@@ -9,8 +11,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent {
 
-  version: string = 'v1.078';
+  version: string = 'v1.092';
   audio = new Audio();
+  public itemRef: AngularFireObject<any>;
+  public acumuladorSonidos = [];
 
   private SOUNDS = {
     'tabamoTomando': 'estabamoTomando',
@@ -22,13 +26,14 @@ export class HomeComponent {
     'seraEsta': 'seraEstaBrother',
     'taMuyPegaa': 'taMuiPegaaEsaCancion',
     'brea': 'yBuenoBrea',
+    'delfin_nopuedeser': 'delfin_nopuedeser',
     'ledijeNo': 'ledijequeNo',
     'mesobra': 'mesobra',
-    'trabas_servicioBug':'trabas_servicioBug',
+    'trabas_servicioBug': 'trabas_servicioBug',
     'trabas_servicio': 'trabas_servicio',
     'trabas_activopasivo': 'trabas_activopasivo',
-    'trabas_mecontaron':'trabas_mecontaron',
-    'trabas_asadito':'trabas_asadito',
+    'trabas_mecontaron': 'trabas_mecontaron',
+    'trabas_asadito': 'trabas_asadito',
     'peamoa': 'peamoa',
     'forinia': 'forinia',
     'sosunbandido': 'sosunbandido',
@@ -62,28 +67,60 @@ export class HomeComponent {
     'tano-public': 'tano-pasman/publicidad-lpqtp',
     'tano-mierda': 'tano-pasman/que-mierda-es-esto',
     'tano-boca': 'tano-pasman/te-fuiste-a-boca',
-    'ronnie_yeabuddy':'ronnie_yeabuddy',
-    'ronnie_yeabuddy1':'ronnie_yeabuddy1',
-    'ronnie_yea':'ronnie_yea',
-    'ronnie_wow1':'ronnie_wow1',
-    'ronnie_wow2':'ronnie_wow2',
-    'ronnie_wow3':'ronnie_wow3',
-    'ronnie_wooo1':'ronnie_wooo1',
-    'ronnie_wooo2':'ronnie_wooo2',
-    'ronnie_lightweight':'ronnie_lightweight',
-    'ronnie_gobaby':'ronnie_gobaby',
-    'ronnie_alright':'ronnie_alright',
-    'duroduro':'duroduro',
-    'cocosily':'cocosily',
-    'oldenait':'oldenait',
-    'peamoa_sutrasero':'peamoa_sutrasero'
+    'ronnie_yeabuddy': 'ronnie_yeabuddy',
+    'ronnie_yeabuddy1': 'ronnie_yeabuddy1',
+    'ronnie_yea': 'ronnie_yea',
+    'ronnie_wow1': 'ronnie_wow1',
+    'ronnie_wow2': 'ronnie_wow2',
+    'ronnie_wow3': 'ronnie_wow3',
+    'ronnie_wooo1': 'ronnie_wooo1',
+    'ronnie_wooo2': 'ronnie_wooo2',
+    'ronnie_lightweight': 'ronnie_lightweight',
+    'ronnie_gobaby': 'ronnie_gobaby',
+    'ronnie_alright': 'ronnie_alright',
+    'duroduro': 'duroduro',
+    'cocosily': 'cocosily',
+    'oldenait': 'oldenait',
+    'peamoa_sutrasero': 'peamoa_sutrasero'
   };
+
+  constructor(private db: AngularFireDatabase) {
+    this.itemRef = db.object('/sonidos');
+  }
 
   public play(sound): void {
     console.log(sound);
     this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
     this.audio.load();
     this.audio.play();
+
+    this.acumuladorSonidos.push(sound);
+    if (this.acumuladorSonidos.length >= 50) {
+      this.contarRepeticiones();
+      this.acumuladorSonidos = [];
+    }
+  }
+
+  private contarRepeticiones() {
+    var obj = {};
+    for (var i = 0, j = this.acumuladorSonidos.length; i < j; i++) {
+      if (obj[this.acumuladorSonidos[i]]) {
+        obj[this.acumuladorSonidos[i]]++;
+      }
+      else {
+        obj[this.acumuladorSonidos[i]] = 1;
+      }
+    }
+    console.log(obj);
+    this.subirEstadisticas(obj);
+  }
+
+  private subirEstadisticas(objeto) {
+    this.itemRef.update(objeto).then(() => {
+      console.log("se guardo exitosamente");
+    }).catch(err => {
+      console.error("error al subir estadisticas", err);
+    });
   }
 
   public stop(): void {
@@ -207,6 +244,5 @@ export class HomeComponent {
     }
     return true;
   }
-  
 
 }
