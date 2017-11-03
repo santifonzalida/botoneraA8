@@ -242,7 +242,7 @@ export class HomeComponent {
     if ($event.keyCode == 73) {
       this.play('cocosily');
     }
-
+    return true;
   }
 
 }
