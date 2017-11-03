@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireObject, AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'btn-a8-home',
@@ -9,8 +11,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeComponent {
 
-  version: string = 'v1.078';
+  version: string = 'v1.092';
   audio = new Audio();
+  public itemRef: AngularFireObject<any>;
+  public acumuladorSonidos = [];
 
   private SOUNDS = {
     'tabamoTomando': 'estabamoTomando',
@@ -80,11 +84,43 @@ export class HomeComponent {
     'peamoa_sutrasero': 'peamoa_sutrasero'
   };
 
+  constructor(private db: AngularFireDatabase) {
+    this.itemRef = db.object('/sonidos');
+  }
+
   public play(sound): void {
     console.log(sound);
     this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
     this.audio.load();
     this.audio.play();
+
+    this.acumuladorSonidos.push(sound);
+    if (this.acumuladorSonidos.length >= 50) {
+      this.contarRepeticiones();
+      this.acumuladorSonidos = [];
+    }
+  }
+
+  private contarRepeticiones() {
+    var obj = {};
+    for (var i = 0, j = this.acumuladorSonidos.length; i < j; i++) {
+      if (obj[this.acumuladorSonidos[i]]) {
+        obj[this.acumuladorSonidos[i]]++;
+      }
+      else {
+        obj[this.acumuladorSonidos[i]] = 1;
+      }
+    }
+    console.log(obj);
+    this.subirEstadisticas(obj);
+  }
+
+  private subirEstadisticas(objeto) {
+    this.itemRef.update(objeto).then(() => {
+      console.log("se guardo exitosamente");
+    }).catch(err => {
+      console.error("error al subir estadisticas", err);
+    });
   }
 
   public stop(): void {
@@ -208,6 +244,5 @@ export class HomeComponent {
     }
 
   }
-
 
 }
