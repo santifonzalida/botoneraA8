@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireObject, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -13,7 +13,10 @@ export class HomeComponent {
 
   version: string = 'v1.092';
   audio = new Audio();
+
   public itemRef: AngularFireObject<any>;
+  public listaWeb = [];
+
   public acumuladorSonidos = [];
 
   private SOUNDS = {
@@ -85,7 +88,7 @@ export class HomeComponent {
   };
 
   constructor(private db: AngularFireDatabase) {
-    this.itemRef = db.object('/sonidos');
+    this.itemRef = db.object('sonidos');
   }
 
   public play(sound): void {
