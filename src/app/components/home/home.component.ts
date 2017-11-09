@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireObject, AngularFireList } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -15,10 +15,8 @@ export class HomeComponent {
   audio = new Audio();
 
   public itemRef: AngularFireObject<any>;
-  public listaWeb = [];
-
   public acumuladorSonidos = [];
-
+  public listaWeb: any[];
   private SOUNDS = {
     'tabamoTomando': 'estabamoTomando',
     'tramboliko': 'tramboliko',
@@ -88,7 +86,6 @@ export class HomeComponent {
   };
 
   constructor(private db: AngularFireDatabase) {
-    this.itemRef = db.object('sonidos');
   }
 
   public play(sound): void {
@@ -97,25 +94,33 @@ export class HomeComponent {
     this.audio.load();
     this.audio.play();
 
-    this.acumuladorSonidos.push(sound);
-    if (this.acumuladorSonidos.length >= 50) {
-      this.contarRepeticiones();
-      this.acumuladorSonidos = [];
+    let sonido = { nombre: sound, cant: 1, existe: false };
+    if (this.acumuladorSonidos.length == 0) {
+      this.acumuladorSonidos.push({ nombre: sonido.nombre, cant: 1 });
+    } else {
+      for (let i = 0; i < this.acumuladorSonidos.length; i++) {
+        if (sonido.nombre == this.acumuladorSonidos[i].nombre) {
+          this.acumuladorSonidos[i].cant += sonido.cant;
+          sonido.existe = true;
+        }
+      }
+      if (!sonido.existe) {
+        this.acumuladorSonidos.push({ nombre: sonido.nombre, cant: 1 });
+      }
     }
-  }
 
-  private contarRepeticiones() {
-    var obj = {};
-    for (var i = 0, j = this.acumuladorSonidos.length; i < j; i++) {
-      if (obj[this.acumuladorSonidos[i]]) {
-        obj[this.acumuladorSonidos[i]]++;
-      }
-      else {
-        obj[this.acumuladorSonidos[i]] = 1;
-      }
+    if (this.acumuladorSonidos.length == 5) {
+      console.log("LISTA LOCAL", this.acumuladorSonidos)
+      this.db.list('eldo/sonidos').valueChanges().subscribe((x) => {
+        this.listaWeb = x;
+        console.log("LISTA OBTENIDA", this.listaWeb);
+
+        //TODO: recorrer lista web, actualizar valores y volver a subir
+
+        this.db.list('eldo').update('sonidos', this.acumuladorSonidos);
+        this.acumuladorSonidos = [];
+      });
     }
-    console.log(obj);
-    this.subirEstadisticas(obj);
   }
 
   private subirEstadisticas(objeto) {
