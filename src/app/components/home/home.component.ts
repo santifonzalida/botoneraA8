@@ -82,7 +82,14 @@ export class HomeComponent {
     'duroduro': 'duroduro',
     'cocosily': 'cocosily',
     'oldenait': 'oldenait',
-    'peamoa_sutrasero': 'peamoa_sutrasero'
+    'peamoa_sutrasero': 'peamoa_sutrasero',
+    'lo_paramalaslenguas':'lo_paramalaslenguas',
+    'lo_malaslenguas':'lo_malaslenguas',
+    'lo_rrrumores':'lo_rrrumores',
+    'lo_rumores':'lo_rumores',
+    'lo_vuelto':'lo_vuelto',
+    'lo_besito':'lo_besito',
+    'lo_chauchau':'lo_chauchau'
   };
 
   constructor(private db: AngularFireDatabase) {
@@ -249,6 +256,27 @@ export class HomeComponent {
     }
     if ($event.keyCode == 73) {
       this.play('cocosily');
+    }
+    if ($event.keyCode == 49) {
+      this.play('lo_paramalaslenguas');
+    }
+    if ($event.keyCode == 50) {
+      this.play('lo_malaslenguas');
+    }
+    if ($event.keyCode == 51) {
+      this.play('lo_rrrumores');
+    }
+    if ($event.keyCode == 52) {
+      this.play('lo_rumores');
+    }
+    if ($event.keyCode == 53) {
+      this.play('lo_vuelto');
+    }
+    if ($event.keyCode == 54) {
+      this.play('lo_besito');
+    }
+    if ($event.keyCode == 55) {
+      this.play(lo_chauchau');
     }
     return true;
   }
