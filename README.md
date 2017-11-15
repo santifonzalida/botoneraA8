@@ -5,6 +5,9 @@ Entrar en esta url: www.peggo.com y cargar un video de youtube para cortarlo y d
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
+## Demo
+http://botonera-a8.herokuapp.com
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
