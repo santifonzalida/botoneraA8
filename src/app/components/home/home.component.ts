@@ -46,6 +46,7 @@ export class HomeComponent {
     'endu_escuchabaelbam': 'endu_escuchabaelbam',
     'endu_carrera': 'endu_carrera',
     'endu_aparentemente': 'endu_aparentemente',
+    'endu_roberto':'endu_roberto',
     'diego_canicani': 'diego_canicani',
     'diego_eldiegoarmando': 'diego_eldiegoarmando',
     'diego_eldiegote': 'diego_eldiegote',
@@ -90,7 +91,8 @@ export class HomeComponent {
     'lo_vuelto':'lo_vuelto',
     'lo_besito':'lo_besito',
     'lo_chauchau':'lo_chauchau',
-    'lo_rumoresaparentemente':'lo_rumoresaparentemente'
+    'lo_rumoresaparentemente':'lo_rumoresaparentemente',
+    'lo_rumoresaparentemente1':'lo_rumoresaparentemente1'
   };
 
   constructor(private db: AngularFireDatabase) {
@@ -179,6 +181,9 @@ export class HomeComponent {
     }
     if ($event.keyCode == 68) {
       this.play('endu_endu');
+    }
+    if ($event.keyCode == 192) {
+      this.play('endu_roberto');
     }
     if ($event.keyCode == 70) {
       this.play('endu_aceleradaendu');
@@ -289,6 +294,10 @@ if ($event.ctrlKey) {
 if ($event.ctrlKey) {
     if ($event.keyCode == 56) {
       this.play('lo_rumoresaparentemente');
+    }}
+if ($event.ctrlKey) {
+    if ($event.keyCode == 57) {
+      this.play('lo_rumoresaparentemente1');
     }}
     return true;
   }
