@@ -92,7 +92,9 @@ export class HomeComponent {
     'lo_besito':'lo_besito',
     'lo_chauchau':'lo_chauchau',
     'lo_rumoresaparentemente':'lo_rumoresaparentemente',
-    'lo_rumoresaparentemente1':'lo_rumoresaparentemente1'
+    'lo_rumoresaparentemente1':'lo_rumoresaparentemente1',
+    'lo_besito3':'lo_besito3',
+    'lo_besito1':'lo_besito1'
   };
 
   constructor(private db: AngularFireDatabase) {
@@ -298,6 +300,14 @@ if ($event.ctrlKey) {
 if ($event.ctrlKey) {
     if ($event.keyCode == 57) {
       this.play('lo_rumoresaparentemente1');
+    }}
+if ($event.ctrlKey) {
+    if ($event.keyCode == 48) {
+      this.play('lo_besito3');
+    }}
+if ($event.ctrlKey) {
+    if ($event.keyCode == 96) {
+      this.play('lo_besito1');
     }}
     return true;
   }
