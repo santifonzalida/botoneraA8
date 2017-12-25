@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject, AngularFireList } from 'angularfire2/database';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'btn-a8-home',
-  host: { '(window:keydown)': 'hotkeys($event)' },
+  host: { '(keyup)': 'hotkeys($event)'},
   templateUrl: 'home.component.html',
   styleUrls: ['./home.component.scss']
 })
@@ -14,9 +12,62 @@ export class HomeComponent {
   version: string = 'v1.092';
   audio = new Audio();
 
-  public itemRef: AngularFireObject<any>;
-  public acumuladorSonidos = [];
-  public listaWeb: any[];
+  //Agregar acá los sonidos que no requieren combinacion de teclas
+  private hotKeys = {
+    '69': 'trabas_mecontaron',
+    '80': 'peamoa',
+    '81': 'gemido',
+    '87': 'mesobra',
+    '89': 'ledijeNo',
+    '82': 'trabas_activopasivo',
+    '84': 'trabas_servicio',
+    '85': 'trabas_asadito',
+    '65': 'endu_carrera',
+    '83': 'endu_aparentemente',
+    '68': 'endu_endu',
+    '192': 'endu_roberto',
+    '70': 'endu_aceleradaendu',
+    '71': 'endu_elotroestabaasi',
+    '72': 'endu_susurros',
+    '74': 'endu_escuchabaelbam',
+    '75': 'endu_paaa',
+    '76': 'peamoa_sutrasero',
+    '97': 'ronnie_wow1',
+    '98': 'ronnie_wow2',
+    '99': 'ronnie_wow3',
+    '100': 'ronnie_wooo1',
+    '101': 'ronnie_wooo2',
+    '102': 'ronnie_yeabuddy',
+    '103': 'ronnie_yeabuddy1',
+    '104': 'ronnie_yea',
+    '96': 'ronnie_lightweight',
+    '105': 'ronnie_gobaby',
+    '106': 'ronnie_alright',
+    '90': 'diego_eldiego',
+    '88': 'diego_eldiegote',
+    '67': 'diego_eldiegoarmando',
+    '86': 'diego_fenomenodrogadicto',
+    '66': 'diego_canicani',
+    '78': 'diego_quienvaaser',
+    '191': 'trabas_servicioBug',
+    '73': 'cocosily'
+  };
+
+  //Sonidos con combinacion acá
+  private combinedHotKeys = {
+    '49': 'lo_paramalaslenguas',
+    '50': 'lo_malaslenguas',
+    '51': 'lo_rrrumores',
+    '52': 'lo_rumores',
+    '53': 'lo_vuelto',
+    '54': 'lo_besito',
+    '55': 'lo_chauchau',
+    '56': 'lo_rumoresaparentemente',
+    '57': 'lo_rumoresaparentemente1',
+    '48': 'lo_besito3',
+    '96': 'lo_besito1'
+  };
+
   private SOUNDS = {
     'tabamoTomando': 'estabamoTomando',
     'tramboliko': 'tramboliko',
@@ -46,7 +97,7 @@ export class HomeComponent {
     'endu_escuchabaelbam': 'endu_escuchabaelbam',
     'endu_carrera': 'endu_carrera',
     'endu_aparentemente': 'endu_aparentemente',
-    'endu_roberto':'endu_roberto',
+    'endu_roberto': 'endu_roberto',
     'diego_canicani': 'diego_canicani',
     'diego_eldiegoarmando': 'diego_eldiegoarmando',
     'diego_eldiegote': 'diego_eldiegote',
@@ -84,63 +135,29 @@ export class HomeComponent {
     'cocosily': 'cocosily',
     'oldenait': 'oldenait',
     'peamoa_sutrasero': 'peamoa_sutrasero',
-    'lo_paramalaslenguas':'lo_paramalaslenguas',
-    'lo_malaslenguas':'lo_malaslenguas',
-    'lo_rrrumores':'lo_rrrumores',
-    'lo_rumores':'lo_rumores',
-    'lo_vuelto':'lo_vuelto',
-    'lo_besito':'lo_besito',
-    'lo_chauchau':'lo_chauchau',
-    'lo_rumoresaparentemente':'lo_rumoresaparentemente',
-    'lo_rumoresaparentemente1':'lo_rumoresaparentemente1',
-    'lo_besito3':'lo_besito3',
-    'lo_besito1':'lo_besito1'
+    'lo_paramalaslenguas': 'lo_paramalaslenguas',
+    'lo_malaslenguas': 'lo_malaslenguas',
+    'lo_rrrumores': 'lo_rrrumores',
+    'lo_rumores': 'lo_rumores',
+    'lo_vuelto': 'lo_vuelto',
+    'lo_besito': 'lo_besito',
+    'lo_chauchau': 'lo_chauchau',
+    'lo_rumoresaparentemente': 'lo_rumoresaparentemente',
+    'lo_rumoresaparentemente1': 'lo_rumoresaparentemente1',
+    'lo_besito3': 'lo_besito3',
+    'lo_besito1': 'lo_besito1'
   };
 
-  constructor(private db: AngularFireDatabase) {
+  constructor() {
   }
 
   public play(sound): void {
     console.log(sound);
-    this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
-    this.audio.load();
-    this.audio.play();
-
-    let sonido = { nombre: sound, cant: 1, existe: false };
-    if (this.acumuladorSonidos.length == 0) {
-      this.acumuladorSonidos.push({ nombre: sonido.nombre, cant: 1 });
-    } else {
-      for (let i = 0; i < this.acumuladorSonidos.length; i++) {
-        if (sonido.nombre == this.acumuladorSonidos[i].nombre) {
-          this.acumuladorSonidos[i].cant += sonido.cant;
-          sonido.existe = true;
-        }
-      }
-      if (!sonido.existe) {
-        this.acumuladorSonidos.push({ nombre: sonido.nombre, cant: 1 });
-      }
+    if (sound != 'undefined') {
+      this.audio.src = `../assets/audio/${this.SOUNDS[sound]}.mp3`;
+      this.audio.load();
+      this.audio.play();
     }
-
-    if (this.acumuladorSonidos.length == 5) {
-      console.log("LISTA LOCAL", this.acumuladorSonidos)
-      this.db.list('eldo/sonidos').valueChanges().subscribe((x) => {
-        this.listaWeb = x;
-        console.log("LISTA OBTENIDA", this.listaWeb);
-
-        //TODO: recorrer lista web, actualizar valores y volver a subir
-
-        this.db.list('eldo').update('sonidos', this.acumuladorSonidos);
-        this.acumuladorSonidos = [];
-      });
-    }
-  }
-
-  private subirEstadisticas(objeto) {
-    this.itemRef.update(objeto).then(() => {
-      console.log("se guardo exitosamente");
-    }).catch(err => {
-      console.error("error al subir estadisticas", err);
-    });
   }
 
   public stop(): void {
@@ -148,168 +165,16 @@ export class HomeComponent {
   }
 
   hotkeys($event) {
+    console.log($event);
     if ($event.keyCode == 16) {
       this.stop();
+    } else {
+      if ($event.keyCode && $event.ctrlKey) {
+        this.play(`${this.combinedHotKeys[$event.keyCode]}`);
+        return true;
+      }
+      this.play(`${this.hotKeys[$event.keyCode]}`);
     }
-    if ($event.keyCode == 80) {
-      this.play('peamoa');
-    }
-    if ($event.keyCode == 81) {
-      this.play('gemido');
-    }
-    if ($event.keyCode == 89) {
-      this.play('ledijeNo');
-    }
-    if ($event.keyCode == 87) {
-      this.play('mesobra');
-    }
-    if ($event.keyCode == 69) {
-      this.play('trabas_mecontaron');
-    }
-    if ($event.keyCode == 82) {
-      this.play('trabas_activopasivo');
-    }
-    if ($event.keyCode == 84) {
-      this.play('trabas_servicio');
-    }
-    if ($event.keyCode == 85) {
-      this.play('trabas_asadito');
-    }
-    if ($event.keyCode == 65) {
-      this.play('endu_carrera');
-    }
-    if ($event.keyCode == 83) {
-      this.play('endu_aparentemente');
-    }
-    if ($event.keyCode == 68) {
-      this.play('endu_endu');
-    }
-    if ($event.keyCode == 192) {
-      this.play('endu_roberto');
-    }
-    if ($event.keyCode == 70) {
-      this.play('endu_aceleradaendu');
-    }
-    if ($event.keyCode == 71) {
-      this.play('endu_elotroestabaasi');
-    }
-    if ($event.keyCode == 72) {
-      this.play('endu_susurros');
-    }
-    if ($event.keyCode == 74) {
-      this.play('endu_escuchabaelbam');
-    }
-    if ($event.keyCode == 75) {
-      this.play('endu_paaa');
-    }
-    if ($event.keyCode == 76) {
-      this.play('peamoa_sutrasero');
-    }
-    if ($event.keyCode == 97) {
-      this.play('ronnie_wow1');
-    }
-    if ($event.keyCode == 98) {
-      this.play('ronnie_wow2');
-    }
-    if ($event.keyCode == 99) {
-      this.play('ronnie_wow3');
-    }
-    if ($event.keyCode == 100) {
-      this.play('ronnie_wooo1');
-    }
-    if ($event.keyCode == 101) {
-      this.play('ronnie_wooo2');
-    }
-    if ($event.keyCode == 102) {
-      this.play('ronnie_yeabuddy');
-    }
-    if ($event.keyCode == 103) {
-      this.play('ronnie_yeabuddy1');
-    }
-    if ($event.keyCode == 104) {
-      this.play('ronnie_yea');
-    }
-    if ($event.keyCode == 96) {
-      this.play('ronnie_lightweight');
-    }
-    if ($event.keyCode == 105) {
-      this.play('ronnie_gobaby');
-    }
-    if ($event.keyCode == 106) {
-      this.play('ronnie_alright');
-    }
-    if ($event.keyCode == 90) {
-      this.play('diego_eldiego');
-    }
-    if ($event.keyCode == 88) {
-      this.play('diego_eldiegote');
-    }
-    if ($event.keyCode == 67) {
-      this.play('diego_eldiegoarmando');
-    }
-    if ($event.keyCode == 86) {
-      this.play('diego_fenomenodrogadicto');
-    }
-    if ($event.keyCode == 66) {
-      this.play('diego_canicani');
-    }
-    if ($event.keyCode == 78) {
-      this.play('diego_quienvaaser');
-    }
-    if ($event.keyCode == 191) {
-      this.play('trabas_servicioBug');
-    }
-    if ($event.keyCode == 78) {
-      this.play('tano-nooo');
-    }
-    if ($event.keyCode == 73) {
-      this.play('cocosily');
-    }
-if ($event.ctrlKey) {
-    if ($event.keyCode == 49) {
-      this.play('lo_paramalaslenguas');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 50) {
-      this.play('lo_malaslenguas');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 51) {
-      this.play('lo_rrrumores');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 52) {
-      this.play('lo_rumores');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 53) {
-      this.play('lo_vuelto');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 54) {
-      this.play('lo_besito');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 55) {
-      this.play('lo_chauchau');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 56) {
-      this.play('lo_rumoresaparentemente');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 57) {
-      this.play('lo_rumoresaparentemente1');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 48) {
-      this.play('lo_besito3');
-    }}
-if ($event.ctrlKey) {
-    if ($event.keyCode == 96) {
-      this.play('lo_besito1');
-    }}
     return true;
   }
-
 }
