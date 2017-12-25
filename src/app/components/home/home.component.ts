@@ -165,7 +165,6 @@ export class HomeComponent {
   }
 
   hotkeys($event) {
-    console.log($event);
     if ($event.keyCode == 16) {
       this.stop();
     } else {
