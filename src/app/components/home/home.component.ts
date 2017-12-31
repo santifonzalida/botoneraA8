@@ -31,6 +31,7 @@ export class HomeComponent {
     '72': 'endu_susurros',
     '74': 'endu_escuchabaelbam',
     '75': 'endu_paaa',
+	'222': 'endu_muerto',
     '76': 'peamoa_sutrasero',
     '97': 'ronnie_wow1',
     '98': 'ronnie_wow2',
@@ -55,7 +56,9 @@ export class HomeComponent {
 
   //Sonidos con combinacion acá
   private combinedHotKeys = {
-	'65': 'endu_loscuatro',
+	'76': 'endu_loscuatro',
+	'71': 'endu_estacurva',
+	'222': 'endu_qepd',
     '49': 'lo_paramalaslenguas',
     '50': 'lo_malaslenguas',
     '51': 'lo_rrrumores',
@@ -100,6 +103,9 @@ export class HomeComponent {
     'endu_aparentemente': 'endu_aparentemente',
     'endu_roberto': 'endu_roberto',
 	'endu_loscuatro': 'endu_loscuatro',
+	'endu_estacurva': 'endu_estacurva',
+	'endu_muerto': 'endu_muerto',
+	'endu_qepd': 'endu_qepd',
     'diego_canicani': 'diego_canicani',
     'diego_eldiegoarmando': 'diego_eldiegoarmando',
     'diego_eldiegote': 'diego_eldiegote',
