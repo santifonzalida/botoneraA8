@@ -58,6 +58,7 @@ export class HomeComponent {
   //Sonidos con combinacion acá
   private combinedHotKeys = {
 	'111': 'ronnie_yea1largo',
+	'106': 'ronnie_gobabylocaso',
 	'192': 'endu_loscuatro',
 	'71': 'endu_estacurva',
 	'222': 'endu_qepd',
@@ -140,6 +141,7 @@ export class HomeComponent {
     'ronnie_wooo2': 'ronnie_wooo2',
     'ronnie_lightweight': 'ronnie_lightweight',
     'ronnie_gobaby': 'ronnie_gobaby',
+    'ronnie_gobabylocaso': 'ronnie_gobabylocaso',
     'ronnie_alright': 'ronnie_alright',
 	'ronnie_yea1':'ronnie_yea1',
 	'ronnie_yea1largo':'ronnie_yea1largo',
