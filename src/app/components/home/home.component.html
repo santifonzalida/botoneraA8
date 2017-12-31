@@ -1,4 +1,4 @@
-﻿<style>
+<style>
     @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Monoton|Press+Start+2P|Zilla+Slab+Highlight');
 </style>
 <div>
@@ -30,689 +30,105 @@
         <div class="col-12">
             <h3>Loco Endú</h3> <small>Fila letra "A"</small>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" *ngFor="let item of listaLocoEndu">
             <div class="card-holder">
                 <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_carrera')">
+                    <div class="button-container" (click)="play(item.src)">
                         <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
                     </div>
                 </div>
                 <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Carrera</p>
+                    <p class="text-center">{{item.displayName}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_aparentemente')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Carrera aparentemente</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_endu')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Enduenduenduen</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_aceleradaendu')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Endu c/ acelerada</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_elotroestabaasi')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">El otro estaba así</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_susurros')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Susurros</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_escuchabaelbam')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Escuchaba el baaam</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('endu_paaa')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">PAAAAA</p>
-                </div>
-            </div>
-        </div>
-      <!--fin row-->
     </div>
 
     <div class="row section-container">
         <div class="col-12">
             <h3>Trabas</h3><small>Fila letra "W"</small>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" *ngFor="let item of travas">
             <div class="card-holder">
                 <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('mesobra')">
+                    <div class="button-container" (click)="play(item.src)">
                         <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
                     </div>
                 </div>
                 <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Me sobra</p>
+                    <p class="text-center">{{item.displayName}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('trabas_mecontaron')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Me contaron</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('trabas_activopasivo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Activo y pasivo</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('trabas_servicio')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Servicio</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ledijeNo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Le dije que no!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('trabas_asadito')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Asadito</p>
-                </div>
-            </div>
-        </div>
-        <!--fin row-->
     </div>
-
 
     <div class="row section-container">
         <div class="col-12">
             <h3>Ronnie Coleman</h3><small>Teclado Numérico</small>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" *ngFor="let item of ronnieColeman">
             <div class="card-holder">
                 <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_wow1')">
+                    <div class="button-container" (click)="play(item.src)">
                         <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
                     </div>
                 </div>
                 <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_wow1</p>
+                    <p class="text-center">{{item.displayName}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_wow2')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_wow2</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_wow3')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_wow3</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_wooo1')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_wooo1</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_wooo2')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_wooo2</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_yeabuddy')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_yeabuddy</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_yeabuddy1')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_yeabuddy1</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_yea')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_yea</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_lightweight')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_lightweight</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_gobaby')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_gobaby</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('ronnie_alright')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">ronnie_alright</p>
-                </div>
-            </div>
-        </div>
-    <!--fin row-->
     </div>
-
 
     <div class="row section-container">
         <div class="col-12">
-            <h3>Clasicos</h3>
+            <h3>Clásicos</h3>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" *ngFor="let item of clasicos">
             <div class="card-holder">
                 <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('gemido')">
+                    <div class="button-container" (click)="play(item.src)">
                         <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
                     </div>
                 </div>
                 <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Gemido (Q)</p>
+                    <p class="text-center">{{item.displayName}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('peamoa')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Peamoá</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('forinia')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">forinia</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tabamoTomando')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Tabamo tomando</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tramboliko')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Tramboliko</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('brea')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Y bueno brea</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('sonRibukOSonNaik')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Esas so Ribuk o Son Naik!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('helloWeynes')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Hello Wenyes</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('seraEsta')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Será esta brother</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('taMuyPegaa')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Ta muy pegaa esa cancion</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('delfin_nopuedeser')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">No puede ser - Delfin</p>
-                </div>
-            </div>
-        </div>
-    <!--fin row-->
     </div>
 
     <div class="row section-container">
         <div class="col-12">
             <h3>Varios</h3>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" *ngFor="let item of varios">
             <div class="card-holder">
                 <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('oldenait')">
+                    <div class="button-container" (click)="play(item.src)">
                         <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
                     </div>
                 </div>
                 <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Oldenait</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('duroduro')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Duro Duro</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('cocosily')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">IIIHHH</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('volo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Y voló</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('sosunbandido')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Sos un bandido</p>
+                    <p class="text-center">{{item.displayName}}</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <div class="row section-container">
         <div class="col-12">
             <h3>Fútbol</h3>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-2" *ngFor="let item of futbol">
             <div class="card-holder">
                 <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('diego_eldiego')">
+                    <div class="button-container" (click)="play(item.src)">
                         <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
                     </div>
                 </div>
                 <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">El Diego</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('diego_eldiegote')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">El Diegote</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('diego_canicani')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Cani Cani!!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-dala-boludo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Dale boludo</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-dale-boludo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Dale boludo1</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-en-la-b')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Estamos en la B</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-isabel')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Isabel</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-negro-de-mierda')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Negro de mierda</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-nooo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Noooooo</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-paraguayo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Paraguayo</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-publicidad-pelotudo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Que pone la publicidad</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-huevo')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Pongan huevo</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-            <div class="card-holder">
-                <div class="icon-holder d-flex align-items-center">
-                    <div class="button-container" (click)="play('tano-mierda')">
-                        <div class="d-flex align-items-center justify-content-center play-button">PLAY</div>
-                    </div>
-                </div>
-                <div class="text-holder d-flex align-items-center justify-content-center">
-                    <p class="text-center">Que mierda es esto</p>
+                    <p class="text-center">{{item.displayName}}</p>
                 </div>
             </div>
         </div>
@@ -721,5 +137,4 @@
     <div class="row justify-content-end">
         <h4 style="font-family: 'Libre Barcode 39 Text', cursive;">BOTONERAA8</h4>
     </div>
-
 </div>
