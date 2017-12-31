@@ -58,7 +58,7 @@ export class HomeComponent {
   //Sonidos con combinacion acá
   private combinedHotKeys = {
 	'111': 'ronnie_yea1largo',
-	'76': 'endu_loscuatro',
+	'192': 'endu_loscuatro',
 	'71': 'endu_estacurva',
 	'222': 'endu_qepd',
     '49': 'lo_paramalaslenguas',
