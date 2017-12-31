@@ -55,6 +55,7 @@ export class HomeComponent {
 
   //Sonidos con combinacion acá
   private combinedHotKeys = {
+	'65': 'endu_loscuatro',
     '49': 'lo_paramalaslenguas',
     '50': 'lo_malaslenguas',
     '51': 'lo_rrrumores',
@@ -98,6 +99,7 @@ export class HomeComponent {
     'endu_carrera': 'endu_carrera',
     'endu_aparentemente': 'endu_aparentemente',
     'endu_roberto': 'endu_roberto',
+	'endu_loscuatro': 'endu_loscuatro',
     'diego_canicani': 'diego_canicani',
     'diego_eldiegoarmando': 'diego_eldiegoarmando',
     'diego_eldiegote': 'diego_eldiegote',
