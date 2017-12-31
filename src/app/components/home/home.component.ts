@@ -14,6 +14,7 @@ export class HomeComponent {
 
   //Agregar acá los sonidos que no requieren combinacion de teclas
   private hotKeys = {
+	'79': 'forinia',
 	'66': 'choro_loreventas',
 	'78': 'choro_zapateas',
 	'77': 'choro_granflauta',
