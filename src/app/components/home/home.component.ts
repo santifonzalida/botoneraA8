@@ -29,7 +29,7 @@ export class HomeComponent {
     this.combinedHotKeys = this.sonidosService.getObjetoHotKeysCombinadas();
   }
 
-  private obtenerListasAudio(){
+  obtenerListasAudio(){
     this.listaLocoEndu = this.sonidosService.getListaLocoEndu();
     this.travas = this.sonidosService.getListaTravas();
     this.ronnieColeman = this.sonidosService.getListaRonnieColeman();
