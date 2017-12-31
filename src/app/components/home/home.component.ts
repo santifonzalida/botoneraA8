@@ -14,6 +14,10 @@ export class HomeComponent {
 
   //Agregar acá los sonidos que no requieren combinacion de teclas
   private hotKeys = {
+	'66': 'choro_loreventas',
+	'78': 'choro_zapateas',
+	'77': 'choro_granflauta',
+	'188': 'choro_inimputable',
     '69': 'trabas_mecontaron',
     '80': 'peamoa',
     '81': 'gemido',
@@ -48,9 +52,7 @@ export class HomeComponent {
     '90': 'diego_eldiego',
     '88': 'diego_eldiegote',
     '67': 'diego_eldiegoarmando',
-    '86': 'diego_fenomenodrogadicto',
-    '66': 'diego_canicani',
-    '78': 'diego_quienvaaser',
+    '86': 'diego_canicani',
     '191': 'trabas_servicioBug',
     '73': 'cocosily'
   };
@@ -159,7 +161,11 @@ export class HomeComponent {
     'lo_rumoresaparentemente': 'lo_rumoresaparentemente',
     'lo_rumoresaparentemente1': 'lo_rumoresaparentemente1',
     'lo_besito3': 'lo_besito3',
-    'lo_besito1': 'lo_besito1'
+    'lo_besito1': 'lo_besito1',
+	'choro_loreventas': 'choro_loreventas',
+	'choro_zapateas': 'choro_zapateas',
+	'choro_granflauta': 'choro_granflauta',
+	'choro_inimputable': 'choro_inimputable'
   };
 
   constructor() {
