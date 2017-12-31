@@ -11,7 +11,7 @@ export class HomeComponent {
 
   version: string = 'v1.092';
   audio = new Audio();
-
+  mostrarAudiosLo = false;
   //Agregar acá los sonidos que no requieren combinacion de teclas
   private hotKeys = {
 	'79': 'forinia',
@@ -196,5 +196,9 @@ export class HomeComponent {
       this.play(`${this.hotKeys[$event.keyCode]}`);
     }
     return true;
+  }
+
+  public mostrarLo() {
+      this.mostrarAudiosLo = !this.mostrarAudiosLo;
   }
 }
