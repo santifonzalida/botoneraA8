@@ -48,6 +48,13 @@ export class ListaAudiosService {
   clasicos = [
     {src: 'gemido', displayName:'gemido'},
     {src: 'peamoa', displayName:'peamoa'},
+	{src: '60entre80', displayName:'60 entre 80 km/h'},
+	{src: 'diaLaboral', displayName:'dia laboral'},
+	{src: 'estaPendienteEs', displayName:'pendiente'},
+	{src: 'quieroQueSeMejore', displayName:'que se mejore'},
+	{src: 'sabersubirybajar', displayName:'peamoa'},
+	{src: 'vamoirnoscomoyoquiero', displayName:'vamo irno'},
+	{src: 'vamonoACasa', displayName:'vamono a casa'},
     {src: 'peamoa_sutrasero', displayName:'como se compolta'},
     {src: 'forinia', displayName:'forinia'},
     {src: 'estabamoTomando', displayName:'tabamo tomando'},
@@ -85,7 +92,10 @@ export class ListaAudiosService {
     {src: 'choro_loreventas', displayName:'lo reventas'},
     {src: 'choro_zapateas', displayName:'lo zapateas'},
     {src: 'choro_granflauta', displayName:'gran flauta'},
-    {src: 'choro_inimputable', displayName:'inimputable'}
+    {src: 'choro_inimputable', displayName:'inimputable'},
+	{src: 'yenisLaCancha', displayName:'Yenis'},
+	{src: 'poneElCambio', displayName:'pone el cambio'},
+	{src: 'soyTuPadre', displayName:'soy tu padre'}
   ];
 
 /*
