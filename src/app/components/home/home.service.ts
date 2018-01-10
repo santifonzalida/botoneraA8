@@ -92,7 +92,10 @@ export class ListaAudiosService {
     {src: 'choro_loreventas', displayName:'lo reventas'},
     {src: 'choro_zapateas', displayName:'lo zapateas'},
     {src: 'choro_granflauta', displayName:'gran flauta'},
-    {src: 'choro_inimputable', displayName:'inimputable'}
+    {src: 'choro_inimputable', displayName:'inimputable'},
+	{src: 'yenisLaCancha', displayName:'Yenis'},
+	{src: 'poneElCambio', displayName:'pone el cambio'},
+	{src: 'soyTuPadre', displayName:'soy tu padre'}
   ];
 
 /*
