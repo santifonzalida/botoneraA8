@@ -27,7 +27,7 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
-    "serve": "^6.2.0",
+    "serve": "^10.1.2",
     "typescript": "~2.3.3",
     "zone.js": "^0.8.14"
   },
